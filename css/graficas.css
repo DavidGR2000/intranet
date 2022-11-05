@@ -1,0 +1,33 @@
+body{
+      font-family: 'Edu VIC WA NT Beginner', cursive;
+      font-family: 'Source Serif Pro', serif;
+}
+
+
+.cont-grafic{
+      max-width: 800px;
+      width: 80%;
+      height: 400px;
+      border:0.4px rgba(58, 53, 53, 0.815);
+      border-collapse: separate;
+      margin: 0 auto;
+      cursor: pointer;
+}
+.grafic{
+      height: 100%;
+      width: 100%;
+}
+.cont-grafic:hover{
+       box-shadow: 5px 5px 5px 3px rgb(107, 102, 102);
+
+}
+
+
+.container-table{
+      max-width: 900px;
+      width: 100%;
+      min-height: 5vh;
+      background-color: rgb(237, 240, 240);
+      margin: 30px auto;
+
+}
