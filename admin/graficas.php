@@ -67,21 +67,30 @@ $result = mysqli_query($connect, $query);
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>No</th>
-                  <th>Edición</th>
+                  <th>Index</th>
+                  <th>Estudiante</th>
+                  <th>Carrera</th>
+                  <th>Semestre</th>
+                  <th>Modalidad</th>
+                  <th>Causa</th>
+                  <th>Motivo</th>
                 </tr>
               </thead>
               <tbody>
         <?php 
-          $i = 1;
-          foreach( $usuarios as $usuario ): 
-        ?>
-                <tr>
-                  <td><?= $usuario[0] ?></td>
-                 
-                </tr>
-        <?php endforeach ?>
+           $i = 1;
+           foreach( $usuarios as $usuario ): 
+         ?>
+                 <tr>
+                   <td><?= $i++;?></td>
+                   <td><?= $usuario[0] ?></td>
+                   <td><?= $usuario[1]?></td>
+                   <td><?= $usuario[2]?></td>
+                   <td><?= $usuario[3]?></td>
+                   <td><?= $usuario[4]?></td>
+                   <td><?= $usuario[5]?></td>
+                 </tr>
+         <?php endforeach ?>
               </tbody>
             </table>
           </div>
