@@ -1,15 +1,23 @@
 
 <?php  
+
  require '../scripts/funciones.php';
  if(! haIniciadoSesion() || ! esAdmin() )
  {
    header('Location: ../index.html');
  }
 
+ conectar();
+ $usuarios = dataTable();
+ desconectar();
+?>
+
+<?php
 $connect = mysqli_connect("localhost", "root", "", "intranet");  
 $query = "SELECT nombre, count(*) as number FROM causas GROUP BY nombre";  
 $result = mysqli_query($connect, $query);  
 ?>  
+
 <!DOCTYPE html>  
 <html>  
      <head>  
