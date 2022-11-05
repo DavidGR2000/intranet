@@ -72,6 +72,7 @@ $result = mysqli_query($connect, $query);
                   <th>Carrera</th>
                   <th>Semestre</th>
                   <th>Modalidad</th>
+                  <th>fecha</th>
                   <th>Causa</th>
                   <th>Motivo</th>
                 </tr>
@@ -89,6 +90,7 @@ $result = mysqli_query($connect, $query);
                    <td><?= $usuario[3]?></td>
                    <td><?= $usuario[4]?></td>
                    <td><?= $usuario[5]?></td>
+                   <td><?= $usuario[6]?></td>
                  </tr>
          <?php endforeach ?>
               </tbody>
