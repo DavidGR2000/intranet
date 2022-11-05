@@ -84,9 +84,9 @@ create table causas(
 create table desertores(
 	id_desertores varchar(10) primary key,
 	id_causa varchar(10),
-	id_carrera varchar(10),
+	id_estudiante varchar(10),
 	FOREIGN key(id_causa ) REFERENCES causas(id_causa),
-	FOREIGN key(id_estudiante) REFERENCES carrera(estudiante),
+	FOREIGN key(id_estudiante) REFERENCES estudiante(id_estudiante),
 	fecha date
 );
 
