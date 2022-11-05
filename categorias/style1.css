@@ -1,0 +1,46 @@
+.contai{
+     margin:50px auto;
+     justify-content: center;
+     max-width: 700px;
+     width: 95%;
+     border-radius: 14px ;
+    background-color: beige;
+
+}
+.cotainer-form{
+      padding: 30px 30px;
+}
+
+.form-control{
+      background-color: bisque
+      ;
+      border: 1px salmon solid;
+}
+.btnn{
+      border:0;
+      border-radius: 7px;
+      background-color: rgb(182, 126, 57);
+      color:aliceblue;
+      cursor: pointer;
+      font-weight: bold;
+}
+
+.btnn:hover{
+      background-color: rgb(126, 212, 212);
+}
+
+.btnl{
+      border:0;
+      border-radius: 7px;
+      background-color: rgb(51, 43, 33);
+      color:aliceblue;
+      cursor: pointer;
+      font-weight: bold;
+}
+
+.btnn:hover{
+      background-color: rgb(184, 189, 104);
+}
+.color{
+      background-color: gainsboro;
+}

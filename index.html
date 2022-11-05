@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Desercion estudiantilz">
+    <meta name="author" content="Camilo Casas">
+    <title>Intranet Estudiantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
+  </head>
+
+  <body>
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Intranet</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right formt" action="scripts/iniciar-sesion.php" method="POST">
+            <div class="form-group">
+              <input type="text" placeholder="Usuario" class="form-control" name="txtUsuario">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Contraseña" class="form-control" name="txtClave">
+            </div>
+            <button type="submit" class="btn btn-success text " >Iniciar sesión</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container-img">
+        <img src="https://bienestarmintic.s3.amazonaws.com/media/images/1._portada_bienestar-19.original.jpg" class="imgf" alt="estudiantil">
+      </div>
+      <div class="container contai">
+        <h1 class="text">Bienvenidos a Bienestar</h1>
+        <p>Este espacio es para personal encargado de ayudar a nuestros jovenes a evitar la desercion</p>
+        <p class="tb"><a class="btj" href="#" role="button">Leer más &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container1">
+            <article class="card">
+              <div class="card__he">
+                <img src="https://juanxxiiizaidin.com/wp-content/uploads/2020/03/COMUNICADO1.png" alt="seguiminto academico">
+              </div>
+              <div class="card__body">
+                <h3>Seguimiento Academico</h3>
+                <hr class="line">
+                <div class="texto">
+                    <p>Estaresmos pendiente de tu nivel academico durante la carrera</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__he">
+                <img class= "imgr" src="https://www.uniminutoradio.com.co/wp-content/uploads/2020/01/coop-minuto-768x306.jpg">
+              </div>
+              <div class="card__body">
+                <h3>Coperativa uniminuto</h3>
+                <hr class="line">
+                <div class="texto">
+                    <p>Te ayudamos un apollo para que puedas cumplir tus sueños</p>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card_he">
+                <img src="http://www.uniminutoradio.com.co/wp-content/uploads/2018/09/bienestar.jpg" alt="seguiminto academico">
+              </div>
+              <div class="card__body">
+                <h3>Bienestar institucional</h3>
+                <hr class="line">
+                <div class="texto">
+                    <p>ofrecemos nuestros servicios para que vivas una gran experiencia en universidad</p>
+                </div>
+              </div>
+            </article>
+    </div>
+
+      <footer>
+        <p class="text1">&copy; Bienestar <span>😍😍🤗</span></p>
+      </footer>
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
