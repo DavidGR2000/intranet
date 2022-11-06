@@ -62,8 +62,13 @@ body {
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
+  color: rgb(236, 209, 209);
   background-color: #428bca;
+}
+
+h1 page-header{
+  font-style: italic;
+  background: red;
 }
 
 
