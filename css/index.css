@@ -162,7 +162,6 @@ hr .line{
       margin-bottom: 15px;
 }
 .text2:hover{
-<<<<<<< HEAD
       box-shadow: 5px 5px 5px 3px rgba(14, 13, 13, 0.493);
 }
 a{text-decoration: none;
@@ -205,12 +204,13 @@ a{text-decoration: none;
   gap: .5rem;
   margin-bottom: 2rem;
   color:#1f1c1c;
+
 }
 
 .form-control1 {
   padding: 15px;
-  font-size: 1rem;
-  background-color: rgba(182, 184, 196, 0.041);
+  font-size: 1.4rem;
+  background-color: rgba(84, 101, 194, 0.548);
   border: 1px solid transparent;
   border-radius: 8px;
 }
@@ -226,7 +226,7 @@ a{text-decoration: none;
 
 .btn-form {
   padding: 15px;
-  background-color: rgb(80, 40, 40);
+  background-color: rgb(32, 89, 128);
   border: 1px solid transparent;
   border-radius: 8px;
   color: #fff;
@@ -235,11 +235,13 @@ a{text-decoration: none;
 }
 
 .btn-form:hover {
-  background-color: rgb(219, 132, 132);
+  background-color: rgba(68, 96, 133, 0.507);
 }
 .title{
       text-align: center;
-=======
       box-shadow: 5px 5px 5px 3px rgba(6, 48, 231, 0.493);
->>>>>>> 914000957d24709c5a3d6c931715002f8873a59c
+      margin-bottom: 35px;
+}
+.nav1{
+      background-color: #FFDD5A;
 }
