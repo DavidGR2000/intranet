@@ -22,6 +22,11 @@ body{
 
 }
 
+hr{
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: black;
+}
 
 .container-table{
       max-width: 900px;

@@ -5,5 +5,6 @@ $nombreCausa=$_POST["cusa"];
 $motivo=$_POST["motivo"];
 conectar();
 insertCausas($id_causa,$nombreCausa,$motivo);
+insertIdc($id_causa);
 
 ?>

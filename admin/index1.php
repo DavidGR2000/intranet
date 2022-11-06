@@ -18,6 +18,7 @@ if(! haIniciadoSesion() || ! esAdmin() )
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="style.css">
       <link href="../css/dashboard.css" rel="stylesheet">
+      <link rel="stylesheet" href="../css/graficas.css">
 </head>
 <body>
  <?php include 'menu-superior.php';?>

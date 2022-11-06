@@ -7,6 +7,7 @@
     <title>Sección de Curiosidades</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="../css/gaficas.css">
     <style>
     body { padding-top: 50px; }
     .starter-template { padding: 40px 15px; text-align: center; }
@@ -59,6 +60,10 @@
                 <option >pgi1</option>
                   </select>
                 </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha De Registro</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                  </div>
                   <div class="form-group">
                     <label for="correo">Correo Electronico</label>
                     <input type="email" class="form-control" id="correo" name="correo" required>
