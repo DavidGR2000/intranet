@@ -101,6 +101,7 @@ footer{
       background-color: rgb(121, 122, 122);
       border: none;
 }
+
 .card__body{
       width: 100%;
       height: 50%;
@@ -173,12 +174,14 @@ a{text-decoration: none;
 
 .seccion__contenido {
       padding: 10px 20px 40px;
+     
 }
 .form1 {
       border: 2px solid rgb(126, 119, 119);
       padding: 10px 25px;
       border-radius: 8px;
       background-color: rgba(92, 147, 199, 0.158);
+      text-align: center;
 }
 
 .form1 input,
@@ -212,6 +215,7 @@ a{text-decoration: none;
   background-color: rgba(182, 184, 196, 0.041);
   border: 1px solid transparent;
   border-radius: 8px;
+  font-size:medium;
 }
 
 .form-control1::placeholder {
@@ -225,16 +229,16 @@ a{text-decoration: none;
 
 .btn-form {
   padding: 15px;
-  background-color: rgb(80, 40, 40);
+  background-color: rgb(194, 183, 155);
   border: 1px solid transparent;
   border-radius: 8px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   cursor: pointer;
 }
 
 .btn-form:hover {
-  background-color: rgb(219, 132, 132);
+  background-color: #fff237;
 }
 .title{
       text-align: center;
