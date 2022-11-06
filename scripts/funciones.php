@@ -137,7 +137,7 @@
 	}
 
 	function insertfecha($id,$fecha){
-		global $conexion;
+		global $conexion; 
 		$sql= "INSERT INTO desertores(id_estudiante,fecha)VALUES('$id','$fecha')";
 		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
 	}
