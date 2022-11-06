@@ -51,6 +51,7 @@
   		<div class="row marketing">	
 	    <footer class="footer">
 	    	<p>&copy; bienestar</p>
+  
 	    </footer>
     </div> <!-- /container -->
 

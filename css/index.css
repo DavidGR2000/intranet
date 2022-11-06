@@ -239,9 +239,13 @@ a{text-decoration: none;
 }
 .title{
       text-align: center;
+<<<<<<< HEAD
       box-shadow: 5px 5px 5px 3px rgba(6, 48, 231, 0.493);
       margin-bottom: 35px;
 }
 .nav1{
       background-color: #FFDD5A;
 }
+=======
+}
+>>>>>>> 58b76ec6336b1bf585fadc3fb0bd6db3895c1fd3

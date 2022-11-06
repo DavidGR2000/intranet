@@ -61,7 +61,8 @@
         	endforeach; 
         	desconectar();
         ?>
-                  <button type="submit" class="btn btn-default">Guardar</button>
+     
+                  <button  type="submit"  class="btn btn-default"  >Guardar</button>
                 </form>
               </div>
             </div>

@@ -45,12 +45,19 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
+<<<<<<< HEAD
   border-bottom: 1px solid #e5e5e5;
   background-color: rgb(26, 170, 170);
+=======
+
+
+>>>>>>> 58b76ec6336b1bf585fadc3fb0bd6db3895c1fd3
 }
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+
+ 
 }
 
 /* Supporting marketing content */
@@ -77,5 +84,6 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+   
   }
 }
