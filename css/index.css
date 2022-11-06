@@ -162,7 +162,6 @@ hr .line{
       margin-bottom: 15px;
 }
 .text2:hover{
-<<<<<<< HEAD
       box-shadow: 5px 5px 5px 3px rgba(14, 13, 13, 0.493);
 }
 a{text-decoration: none;
@@ -239,7 +238,4 @@ a{text-decoration: none;
 }
 .title{
       text-align: center;
-=======
-      box-shadow: 5px 5px 5px 3px rgba(6, 48, 231, 0.493);
->>>>>>> 914000957d24709c5a3d6c931715002f8873a59c
 }

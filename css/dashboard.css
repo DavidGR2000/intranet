@@ -62,8 +62,8 @@ body {
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: rgb(236, 209, 209);
-  background-color: #428bca;
+  color: rgb(0, 0, 0);
+  background-color: #FFDD5A;
 }
 
 h1 page-header{
