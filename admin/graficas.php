@@ -21,7 +21,7 @@ $result = mysqli_query($connect, $query);
 <!DOCTYPE html>  
 <html>  
      <head>  
-          <title> Reportes de graficas</title>  
+          <title> Reportes de graficas</title> 
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
           <script type="text/javascript">  
           google.charts.load('current', {'packages':['corechart']});  
@@ -38,7 +38,7 @@ $result = mysqli_query($connect, $query);
                          ?>  
                     ]);  
                var options = {  
-                     title: 'causas de Desercion',  
+                     title: 'Causas De La Desercion',  
                      //is3D:true,  
                      pieHole: 0.4  
                     };  
@@ -48,6 +48,7 @@ $result = mysqli_query($connect, $query);
           </script> 
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
           <link href="../css/dashboard.css" rel="stylesheet">
+          <link rel="stylesheet" href="../css/graficas.css">
      </head>  
      <body>  
      <?php include 'menu-superior.php'; ?>
@@ -56,14 +57,11 @@ $result = mysqli_query($connect, $query);
         <?php include 'menu-lateral.php'; ?>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header"> Grafica De Las Posibles Deserciones</h1>
-          <div style="width:900px;">  
-               <br />  
-               <div id="piechart" style="width: 900px; height: 500px;"></div>  
+          <div class="cont-grafic">  
+               <div id="piechart" class="grafic"></div>  
           </div>  
-       </div>   
-     </div>   
-     <div>
-     <div class="table-responsive">
+          <div class="container-table">
+          <div class="table-responsive">
             <table class="table table-striped">
               <thead>
                 <tr>
@@ -72,7 +70,7 @@ $result = mysqli_query($connect, $query);
                   <th>Carrera</th>
                   <th>Semestre</th>
                   <th>Modalidad</th>
-                  <th>fecha</th>
+                  <th>Fecha</th>
                   <th>Causa</th>
                   <th>Motivo</th>
                 </tr>
@@ -96,12 +94,12 @@ $result = mysqli_query($connect, $query);
               </tbody>
             </table>
           </div>
-        </div>
-
-         
-     </div>
-
+           </div>
 </div>  
+       </div>   
+     </div>   
+   </div>
+    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
      </body>  

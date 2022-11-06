@@ -136,5 +136,15 @@
 		return $respuestas_array;
 	}
 
+	function insertfecha($id,$fecha){
+		global $conexion;
+		$sql= "INSERT INTO desertores(id_estudiante,fecha)VALUES('$id','$fecha')";
+		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
+	}
+	function insertIdc($id){
+		global $conexion;
+		$sql= "INSERT INTO desertores(id_causa)VALUES('$id')";
+		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
+	}
 
 ?>

@@ -18,6 +18,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/graficas.css">
 
     <!-- Custom styles for this template -->
     <link href="../css/dashboard.css" rel="stylesheet">
