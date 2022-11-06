@@ -155,5 +155,12 @@ hr .line{
       margin-bottom: 15px;
 }
 .text2:hover{
-      box-shadow: 5px 5px 5px 3px rgba(14, 13, 13, 0.493);
+      box-shadow: 5px 5px 5px 3px rgba(6, 48, 231, 0.493);
+}
+.imgf{
+      transition: 0.5s;
+      object-fit: cover;
+}
+.imgf:hover{
+      transform: scale(1.05);
 }
