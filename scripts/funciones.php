@@ -136,14 +136,9 @@
 		return $respuestas_array;
 	}
 
-	function insertfecha($id,$fecha){
+	function insertfecha($causa,$id,$fecha){
 		global $conexion; 
-		$sql= "INSERT INTO desertores(id_estudiante,fecha)VALUES('$id','$fecha')";
-		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
-	}
-	function insertIdc($id){
-		global $conexion;
-		$sql= "INSERT INTO desertores(id_causa)VALUES('$id')";
+		$sql= "INSERT INTO desertores(id_causa,id_estudiante,fecha)VALUES('$causa','$id','$fecha')";
 		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
 	}
 	function generarRamdon(){

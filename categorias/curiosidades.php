@@ -30,8 +30,6 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Estudiante</a></li>
-            <li><a href="./causas.php">Causas</a></li>
-            <li><a href="#contact"></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -40,6 +38,7 @@
     <div class="contai">
       <div class="cotainer-form">
       <form action="../scripts/insertar.php"  class="form"method="POST">
+        <div class="cntfor">
                   <div class="form-group">
                     <label for="estudiante">Id Estudiante</label>
                     <input type="text" class="form-control" id="estudiante" name="estudiante" required>
@@ -84,8 +83,26 @@
                     <label for="direccion">Direccion</label>
                     <input type="text" class="form-control" id="direccion" name="direccion" required>
                   </div>   
-                  <button type="submit" class="btnn btn btn-default" b>Guardar</button>
+          </div>
+          <div class="ctnfr2">
+          <div class="form-group">
+                  <label for="cusa">Causa</label>
+                <select class="form-control color" id="cusa" name="cusa" required>
+                <option>Economica</option>
+                <option>Academica</option>
+                <option>Personal</option>
+                <option >Cambio de residencia</option>
+                  </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="motivo">Motivo</label>
+                   <textarea name="motivo" id="motivo" cols="99" rows="6" class="form-control" required></textarea>
+                  </div>
+
+                  <button type="submit" class="btnn btn btn-default">Guardar</button>
                   <input type="reset" class=" btnl btn btn-default" value="borrar" >
+          </div>
+
                 </form>
 </div>
     </div><!-- /.container -->
