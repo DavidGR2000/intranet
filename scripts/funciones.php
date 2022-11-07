@@ -146,5 +146,13 @@
 		$sql= "INSERT INTO desertores(id_causa)VALUES('$id')";
 		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
 	}
+	function generarRamdon(){
+		$char = "abcdefgh1jklmnopqrstuwxyz123456789";
+		$cad="";
+		for($i =0; $i<8;$i++){
+			$cad .= substr ($char, rand (0,35),1);
+		}
+		return $cad;
+	}
 
 ?>

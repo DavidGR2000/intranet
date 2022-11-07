@@ -1,10 +1,12 @@
 <?php
 require "./funciones.php";
-$id_causa=$_POST["causa"];
+$aliatorio=generarRamdon();
+
 $nombreCausa=$_POST["cusa"];
 $motivo=$_POST["motivo"];
 conectar();
-insertCausas($id_causa,$nombreCausa,$motivo);
-insertIdc($id_causa);
+insertCausas($aliatorio,$nombreCausa,$motivo);
+insertIdc($aliatorio);
+
 
 ?>

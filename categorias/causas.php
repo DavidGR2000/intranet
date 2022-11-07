@@ -38,13 +38,9 @@
     <div class="contai">
       <div class="cotainer-form">
       <form action="../scripts/insertarCausas.php"  class="form"method="POST">
-                  <div class="form-group">
-                    <label for="causa">Id Causa</label>
-                    <input type="text" class="form-control" id="causa" name="causa" required>
-                  </div>
+                  
                   <div class="form-group">
                   <label for="cusa">Causa</label>
-
                 <select class="form-control color" id="cusa" name="cusa" required>
                 <option>Economica</option>
                 <option>Academica</option>
