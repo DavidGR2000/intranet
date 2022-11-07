@@ -83,13 +83,15 @@ $result = mysqli_query($connect, $query);
          ?>
                  <tr>
                    <td><?= $i++;?></td>
-                   <td><?= $usuario[0] ?></td>
-                   <td><?= $usuario[1]?></td>
+                   <td><?= $usuario[1] ?></td>
                    <td><?= $usuario[2]?></td>
                    <td><?= $usuario[3]?></td>
                    <td><?= $usuario[4]?></td>
                    <td><?= $usuario[5]?></td>
                    <td><?= $usuario[6]?></td>
+                   <td><?= $usuario[7]?></td>
+                  <td><a href="../scripts/eliminar.php?id=<?= $usuario[0]?>">Eliminar</a></td>
+
                  </tr>
          <?php endforeach ?>
               </tbody>

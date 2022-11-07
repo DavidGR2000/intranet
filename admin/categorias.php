@@ -49,7 +49,6 @@
                   <td><?= $categoria[0] ?></td>
                   <td><?= $categoria[1] ?></td>
                   <td><a href="./editarCategoria.php?id=<?= $categoria[0] ?>">Editar datos</a></td>
-                 
                 </tr>
         <?php endforeach ?>
               </tbody>
