@@ -35,28 +35,20 @@ body {
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
-    background-color: red;
+    background-color: rgb(104, 71, 71);
   }
 }
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-<<<<<<< HEAD
   background-color: #a72929;
-=======
-<<<<<<< HEAD
   border-bottom: 1px solid #e5e5e5;
   background-color: rgb(26, 170, 170);
-=======
->>>>>>> 7f4ebf9dad05b2d9107419c04d1f06399b0266a4
-
-
->>>>>>> 58b76ec6336b1bf585fadc3fb0bd6db3895c1fd3
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
