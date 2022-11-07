@@ -7,6 +7,7 @@
     <title>Sección de Curiosidades</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="http://localhost/estudiantil/intranet/css/grupos.css">
     <style>
     body { padding-top: 50px; }
     .starter-template { padding: 40px 15px; text-align: center; }
@@ -23,11 +24,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../panelUsuario.php">Bienestar</a>
+
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./curiosidades.php">Estudiante</a></li>
+            <li class="active"><a  href="../panelUsuario.php">Principal</a></li>
+            <li ><a href="./curiosidades.php">Estudiante</a></li>
             <li><a href="#">Causas</a></li>
             <li><a href="#contact"></a></li>
           </ul>

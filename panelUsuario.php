@@ -49,7 +49,7 @@
 
   		<div class="row marketing">	
 	    <footer class="footer">
-	    	<p>&copy; bienestar</p>
+	    	<p>&copy; Bienestar Universitario</p>
   
 	    </footer>
     </div> <!-- /container -->

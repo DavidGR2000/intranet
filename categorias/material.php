@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Académico</title>
+    <title>Banco de Trabajo</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/estudiantil/intranet/css/grupos.css">
+    
 
     <style>
     body { padding-top: 50px; }
@@ -26,13 +28,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Trading Academy</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -41,8 +39,8 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Material Académico</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Banco de Trabajo</h1>
+        <p class="lead">Biemvenido.<br> Este espacio esta pensado para tener acceso a las ofertas laborales para los estudiantes.</p>
       </div>
 
     </div><!-- /.container -->
