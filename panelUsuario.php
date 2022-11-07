@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panel de Usuario</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jumbotron-narrow.css">
+    <link rel="stylesheet" href="http://localhost/estudiantil/intranet/css/jumbotron-narrow.css">
   </head>
 
   <body>
