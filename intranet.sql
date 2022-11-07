@@ -225,6 +225,7 @@ CREATE TABLE `materia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+INSERT INTO `materia` VALUES ('78956','346790','Ceplec_1',3,20),('78957','346790','Ceplec_3',3,15);
 --
 -- Dumping data for table `materia`
 --
@@ -320,3 +321,12 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-11-05 23:23:39
+
+START TRANSACTION;
+UPDATE estudiante SET nombre="Pedro", telefono="3114569032" WHERE id_estudiante="751356";
+UPDATE causas SET nombre="Economico", motivo="Sin recursos" WHERE id_causa="128";
+COMMIT;
+
+
+
+

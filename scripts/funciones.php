@@ -36,7 +36,7 @@
 		$respuesta = mysqli_query($conexion, "SELECT * FROM categorias WHERE ID_Categoria =  ".$id);		
 		return mysqli_fetch_row($respuesta);
 	}
-
+	
 	function getUsuarios()
 	{
 		global $conexion;
