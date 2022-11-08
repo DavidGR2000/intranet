@@ -13,6 +13,6 @@
   eliminarC($data[0]);
   eliminarE($data[1]);
 
-deconectar();
+desconectar();
 
 
