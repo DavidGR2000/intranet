@@ -13,9 +13,4 @@
   eliminarC($data[0]);
   eliminarE($data[1]);
 
-<<<<<<< HEAD
-=======
-desconectar();
-
->>>>>>> d7ccab25ee11b81783be441ded532b2d1dbb506c
-
+?>
