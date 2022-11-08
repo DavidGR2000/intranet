@@ -11,6 +11,7 @@ body{
       border:0.4px rgba(58, 53, 53, 0.815);
       border-collapse: separate;
       margin: 0 auto;
+      margin-top: 30px;
       cursor: pointer;
 }
 .grafic{
@@ -34,5 +35,15 @@ hr{
       min-height: 5vh;
       background-color: rgb(237, 240, 240);
       margin: 30px auto;
+
+}
+
+.formulario{
+      margin-top: 50px;
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
 
 }

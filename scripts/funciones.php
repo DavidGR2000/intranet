@@ -170,4 +170,14 @@
 		global $conexion;
 		mysqli_query($conexion, "DELETE FROM desertores WHERE id_desertores='$causa'");
 	}
+	
+	function getEstudiante(){
+		global $conexion;
+		$respuesta=mysqli_query($conexion,"SELECT * FROM estudiante");
+		$respuestas_array = array();
+		while ($fila = $respuesta->fetch_row())
+		  $respuestas_array[] = $fila;
+		return $respuestas_array;
+	}
 ?>
+

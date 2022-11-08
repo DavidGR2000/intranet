@@ -10,6 +10,7 @@
 
  conectar();
  $usuarios = dataTable();
+ $estudiante = getEstudiante();
  desconectar();
 ?>
 
@@ -60,8 +61,22 @@ $result = mysqli_query($connect, $query);
           <h1 class="page-header"> Grafica De Las Posibles Deserciones</h1>
           <div class="cont-grafic">  
                <div id="piechart" class="grafic"></div>  
-          </div>  
+          </div> 
+          <div class="formulario">
+          <form action="./graficas.php" method="post">
+          <select class="form-control color" id="cusa" name="cusa" required>
+                <option>Todo</option>
+                <option >Estudiante</option>
+          </select>
+          <button type="submit">enviar</button>
+        </form>
+        </div>
+
           <div class="container-table">
+          <?php
+                 $dara = $_POST["cusa"];
+
+                 if($dara=="Todo"){?>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -98,6 +113,45 @@ $result = mysqli_query($connect, $query);
             </table>
           </div>
            </div>
+           <?php } if($dara=="Estudiante"){?>
+            <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Id Estudiante</th>
+                  <th>id carrera</th>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+                  <th>Contacto</th>
+                  <th>Departamento</th>
+                  <th>Municipio</th>
+                  <th>Direccion</th>
+                </tr>
+              </thead>
+              <tbody>
+        <?php 
+           $i = 1;
+           foreach( $estudiante as $studen): 
+         ?>
+                 <tr>
+                   <td><?= $i++;?></td>
+                   <td><?= $studen[0] ?></td>
+                   <td><?= $studen[1]?></td>
+                   <td><?= $studen[2]?></td>
+                   <td><?= $studen[3]?></td>
+                   <td><?= $studen[4]?></td>
+                   <td><?= $studen[5]?></td>
+                   <td><?= $studen[6]?></td>
+                   <td><?= $studen[7]?></td>
+
+                 </tr>
+         <?php endforeach ?>
+              </tbody>
+            </table>
+          </div>
+           </div>
+            <?php }?>
 </div>  
        </div>   
      </div>   
