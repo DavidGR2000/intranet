@@ -19,7 +19,14 @@ $conexion = getconectar();
 $statement = $conexion->prepare("CALL insertRegis(?,?,?,?,?,?,?,?,?,?,?,?)");
 $statement->bind_param("ssssssssssss",$idEstudiante,$carrera,$nombreEstudiante,$correo,$telefono,$departamento,$municipio,$direccion,$aliatorio,$nombreCausa,$motivo,$fecha);
 $statement->execute();
-
+if($statement->error){
+      print_r("es este error");
+      print($statement->error);
+      header('Location: ../categorias/curiosidades.php');
+}else{
+      $statement->close();
+      header('Location: ../panelUsuario.php');
+}
 
 }
 procAlmaIsert();
