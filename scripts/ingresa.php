@@ -11,6 +11,9 @@ if(! haIniciadoSesion() || ! esAdmin() )
       $ruta = $_POST["ruta"];  
 
 conectar();
-ingresar($nombre,$descripcion,$ruta)
+ingresar($nombre,$descripcion,$ruta);
+desconectar();
+header('Location: ../admin/index1.php');
+
 
 ?>
