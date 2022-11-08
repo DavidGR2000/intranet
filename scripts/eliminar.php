@@ -13,8 +13,3 @@
   eliminarC($data[0]);
   eliminarE($data[1]);
 
-<<<<<<< HEAD
-
-=======
-?>
->>>>>>> 03e549133197393cffbb78c16a7afe85897e6d29
