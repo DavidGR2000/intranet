@@ -30,14 +30,10 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-<<<<<<< HEAD
             <li class="active"><a href="#">Estudiante</a></li>
-=======
           <li class="active"><a  href="../panelUsuario.php">Principal</a></li>
             <li ><a href="#">Registro de Estudiantes</a></li>
-            <li><a href="./causas.php">Causas</a></li>
             <li><a href="#contact"></a></li>
->>>>>>> 7053df9f00b442998856410e442f4feac2893eb3
           </ul>
         </div><!--/.nav-collapse -->
       </div>
