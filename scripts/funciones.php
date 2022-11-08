@@ -8,6 +8,15 @@
 		mysqli_set_charset($conexion, 'utf8');
 	}
 
+	function getconectar()
+	{
+		global $conexion;
+		$conexion = mysqli_connect('localhost', 'root', '', 'intranet');
+		mysqli_set_charset($conexion, 'utf8');
+		return $conexion;
+	}
+
+
 	function getTodasCategorias()
 	{
 		global $conexion;
@@ -114,19 +123,6 @@
 		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
 	}
 
-	function ingregarDatos($id,$carrera,$nombre,$correo,$telefono,$departamento,$municipio,$direccion){
-		global $conexion;
-		$sql= mysqli_query($conexion,"INSERT INTO estudiante(`id_estudiante`, `id_carrera`, `nombre`, `correo`, `telefono`, `departamento`, `municipio`, `direccion`) 
-		VALUES ('$id','$carrera','$nombre','$correo','$telefono','$departamento','$municipio','$direccion')");
-	}
-
-	function insertCausas($id,$nombre,$motivo){
-		global $conexion;
-		$sql= "INSERT INTO causas(id_causa,nombre,motivo) 
-		VALUES('$id','$nombre','$motivo')";
-		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
-	}
-
 	function dataTable(){
 		global $conexion;
 		$respuesta = mysqli_query($conexion,"SELECT desertores.id_desertores,estudiante.nombre,carrera.nombre,carrera.semestre,carrera.modalidad,desertores.fecha,causas.nombre,causas.motivo FROM carrera INNER JOIN estudiante ON carrera.id_carrera=estudiante.id_carrera INNER JOIN desertores ON estudiante.id_estudiante=desertores.id_estudiante INNER JOIN causas ON desertores.id_causa=causas.id_causa");
@@ -136,11 +132,6 @@
 		return $respuestas_array;
 	}
 
-	function insertfecha($causa,$id,$fecha){
-		global $conexion; 
-		$sql= "INSERT INTO desertores(id_causa,id_estudiante,fecha)VALUES('$causa','$id','$fecha')";
-		$result  =mysqli_query($conexion,$sql)or trigger_error("Query failed SQL-Error");
-	}
 	function generarRamdon(){
 		$char = "abcdefgh1jklmnopqrstuwxyz123456789";
 		$cad="";

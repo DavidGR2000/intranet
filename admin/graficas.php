@@ -71,7 +71,8 @@ $result = mysqli_query($connect, $query);
           <button type="submit">enviar</button>
         </form>
         </div>
-
+<hr>
+<hr>
           <div class="container-table">
           <?php
                  $dara = $_POST["cusa"];

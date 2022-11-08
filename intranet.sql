@@ -328,5 +328,27 @@ UPDATE causas SET nombre="Economico", motivo="Sin recursos" WHERE id_causa="128"
 COMMIT;
 
 
+CREATE PROCEDURE `insertRegis`( id_estudiante varchar(10), id_carrera varchar(10), nombre char(30), correo varchar(30), telefono varchar(19), departamento char(30), municipio char(30), direccion varchar(50), id_causa varchar(10), nombre_causa char(40), motivo text )BEGIN INSERT INTO estudiante( id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion)VALUES(id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion); INSERT INTO causas(id_causa,nombre,motivo)VALUES(id_causa, nombre_causa, motivo); END; 
 
-
+DELIMITER $$ -- CAMBIO EL DELIMITADOR POR "$$"
+DROP PROCEDURE IF EXISTS `insertRegis` $$
+CREATE PROCEDURE `insertRegis`(
+  id_estudiante varchar(10),
+  id_carrera varchar(10),
+  nombre char(30),
+  correo varchar(30),
+  telefono varchar(19),
+  departamento char(30),
+  municipio char(30),
+  direccion varchar(50),
+  id_causa varchar(10),
+  nombre_causa char(40),
+  motivo text,
+  fecha date
+    
+)BEGIN
+INSERT INTO estudiante( id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion)VALUES(id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion);
+INSERT INTO causas(id_causa,nombre,motivo)VALUES(id_causa, nombre_causa, motivo);
+INSERT INTO desertores(id_causa,id_estudiante,fecha)VALUES(id_causa,id_estudiante,fecha);
+END $$
+DELIMITER ;

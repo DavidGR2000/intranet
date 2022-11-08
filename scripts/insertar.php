@@ -1,5 +1,8 @@
 <?php
 require 'funciones.php';
+
+function procAlmaIsert(){
+
 $aliatorio=generarRamdon();
 $idEstudiante=$_POST["estudiante"];
 $carrera=$_POST["carrera"];
@@ -12,12 +15,14 @@ $direccion=$_POST["direccion"];
 $fecha = $_POST["fecha"];
 $nombreCausa=$_POST["cusa"];
 $motivo=$_POST["motivo"];
-conectar();
-ingregarDatos($idEstudiante,$carrera,$nombreEstudiante,$correo,$telefono,$departamento,$municipio,$direccion);
-insertCausas($aliatorio,$nombreCausa,$motivo);
-insertfecha($aliatorio,$idEstudiante,$fecha);
+$conexion = getconectar();
+$statement = $conexion->prepare("CALL insertRegis(?,?,?,?,?,?,?,?,?,?,?,?)");
+$statement->bind_param("ssssssssssss",$idEstudiante,$carrera,$nombreEstudiante,$correo,$telefono,$departamento,$municipio,$direccion,$aliatorio,$nombreCausa,$motivo,$fecha);
+$statement->execute();
 
 
+}
+procAlmaIsert();
 ?>
 
 
