@@ -3,9 +3,9 @@ require '../scripts/funciones.php';
 // Validación de la sesión como administrador:
 if(! haIniciadoSesion() || ! esAdmin() )
 {
-  header('Location: index.html');
+  header('Location: ../index.html');
 }
-
+conectar();
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ if(! haIniciadoSesion() || ! esAdmin() )
               </div>
             </div>
           </div>
-            
+            <?php desconectar();?>
         </div>
 
         </div>

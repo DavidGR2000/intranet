@@ -4,10 +4,9 @@
   {
     header('Location: ../index.html');
   }
-
   conectar();
   $usuarios = getUsuarios();
-  desconectar();
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -57,6 +56,7 @@
               </tbody>
             </table>
           </div>
+          <?php desconectar();?>
         </div>
       </div>
     </div>

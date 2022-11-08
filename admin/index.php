@@ -2,12 +2,11 @@
   require '../scripts/funciones.php';
   if(! haIniciadoSesion() || ! esAdmin() )
   {
-    header('Location: index.html');
+    header('Location: ../index.html');
   }
 
   conectar();
   $usuarios = getUsuarios();
-  desconectar();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -32,7 +31,7 @@
         <?php include './menu-lateral.php'; ?>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Panel de Administración</h1>
-
+          <?php desconectar();?>
           <h4 class="sub-header">Bienvenido, administrador.</h4>
           <p>Por favor seleccione una de las opciones del menú lateral izquierdo.</p>
 

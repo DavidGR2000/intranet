@@ -4,10 +4,8 @@
   {
     header('Location: ../index.html');
   }
-
   conectar();
   $categorias = getTodasCategorias();
-  desconectar();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -51,6 +49,7 @@
                   <td><a href="./editarCategoria.php?id=<?= $categoria[0] ?>">Editar datos</a></td>
                 </tr>
         <?php endforeach ?>
+        <?php desconectar();?>
               </tbody>
             </table>
           </div>

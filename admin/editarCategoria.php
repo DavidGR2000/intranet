@@ -3,7 +3,7 @@
   // Validación de la sesión como administrador:
   if(! haIniciadoSesion() || ! esAdmin() )
   {
-    header('Location: index.html');
+    header('Location: ../index.html');
   }
   // Verificación del parámetro GET:
   if( isset($_GET['id']) )
@@ -13,7 +13,6 @@
   conectar();
   $categoria = getCategoriaPorId($id);
   desconectar();
- 
 ?>
 <!DOCTYPE html>
 <html lang="es">

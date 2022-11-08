@@ -8,7 +8,7 @@
     <body>
         <?php
         
-            require_once 'ingresa.php';
+            require 'ingresa.php';
 
             echo '<form method="post" action="index.php">';
             echo '<input type="submit" name="commit" value="commit">';

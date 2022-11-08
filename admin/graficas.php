@@ -7,11 +7,10 @@
  {
    header('Location: ../index.html');
  }
-
  conectar();
  $usuarios = dataTable();
  $estudiante = getEstudiante();
- desconectar();
+
 ?>
 
 <?php
@@ -156,6 +155,7 @@ $result = mysqli_query($connect, $query);
 </div>  
        </div>   
      </div>   
+     <?php desconectar(); ?>
    </div>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

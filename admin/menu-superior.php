@@ -12,7 +12,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"></a></a></li>
-            <li><a href="../index.html">Cerrar sesión</a></li>
+            <li><a href="../scripts/cerrar-sesion.php">Cerrar sesión</a></li>
           </ul>
         </div>
       </div>
