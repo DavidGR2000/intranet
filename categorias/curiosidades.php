@@ -80,7 +80,7 @@
                     <input type="text" class="form-control" id="departamento" name="departamento" required>
                   </div> 
                   <div class="form-group">
-                    <label for="municipio">municipio</label>
+                    <label for="municipio">Municipio</label>
                     <input type="text" class="form-control" id="municipio" name="municipio" required>
                   </div> 
                   <div class="form-group">
