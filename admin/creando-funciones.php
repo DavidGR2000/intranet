@@ -8,7 +8,7 @@
      * sub-ejecuciones para cada función o procedimiento almacenado.
      */
 
-    $bd = "bd_pruebas"; //Se debe sacar aparte el nombre de la BD para la verificación final.
+    $bd = "intranet"; //Se debe sacar aparte el nombre de la BD para la verificación final.
 
     //Estos paràmetros pueden venir de un include. 
     //Ojo, el nombre de la base de datos, solito, se usará más tarde.
