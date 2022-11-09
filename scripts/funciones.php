@@ -170,5 +170,15 @@
 		  $respuestas_array[] = $fila;
 		return $respuestas_array;
 	}
+   function getnumber(){
+        return $number=0;
+    }
+
+    function agregarUser($user, $clave,$number){
+        global $conexion;
+        mysqli_query($conexion,"INSERT INTO usuarios(usuario,clave,admin) VALUES('$user','$clave','$number')");
+    }
+
+
 ?>
 
