@@ -26,13 +26,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Intranet</a>
-          <a class="navbar-brand" href="./indexRegistro.html">Registrarse</a>
+        <button class="botonR" onclick="location.href='indexRegistro.html'">Registrar</button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right formt" action="scripts/iniciar-sesion.php" method="POST">
             <div class="form-group">
-              <input type="text" placeholder="Usuario" class="form-control" name="txtUsuario">
+              <input type="text" require="" autocomplete="off" placeholder="Usuario" class="form-control" name="txtUsuario">
             </div>
             <div class="form-group">
               <input type="password" placeholder="Contraseña" class="form-control" name="txtClave">
