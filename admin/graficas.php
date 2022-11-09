@@ -62,17 +62,17 @@ $result = mysqli_query($connect, $query);
           <div class="cont-grafic">  
                <div id="piechart" class="grafic"></div>  
           </div> 
-          <div class="formulario">
-          <form action="./graficas.php" method="post">
+          <div class="formul">
+          <form action="./graficas.php" method="post" class="formulario">
           <select class="form-control color" id="cusa" name="cusa" required>
                 <option>Eliminar Registro Estudiante</option>
                 <option >Mostrar Estudiante</option>
                 <option> Mostrar Usuario</option>
           </select>
-          <button type="submit">enviar</button>
+          <button class="btn"type="submit">enviar</button>
         </form>
         </div>
-<hr>
+        <br>
 <hr>
           <div class="container-table">
           <?php

@@ -1,11 +1,12 @@
 <?php
 require "./funciones.php";
+
 $user = $_POST["Usuario"];
 $contraseña = $_POST["Contraseña"];
-conectar();
 $numero = getnumber();
+conectar();
 agregarUser($user,$contraseña,$numero);
- header('Location: ../index.html');
+header('Location: ../index.html');
  desconectar();
 
 ?>
