@@ -10,6 +10,7 @@
  conectar();
  $usuarios = dataTable();
  $estudiante = getEstudiante();
+ $users=getUserss();
 
 ?>
 
@@ -64,8 +65,9 @@ $result = mysqli_query($connect, $query);
           <div class="formulario">
           <form action="./graficas.php" method="post">
           <select class="form-control color" id="cusa" name="cusa" required>
-                <option>Todo</option>
-                <option >Estudiante</option>
+                <option>Eliminar Registro Estudiante</option>
+                <option >Mostrar Estudiante</option>
+                <option> Mostrar Usuario</option>
           </select>
           <button type="submit">enviar</button>
         </form>
@@ -76,7 +78,7 @@ $result = mysqli_query($connect, $query);
           <?php
                  $dara = $_POST["cusa"];
 
-                 if($dara=="Todo"){?>
+                 if($dara=="Eliminar Registro Estudiante"){?>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -113,7 +115,9 @@ $result = mysqli_query($connect, $query);
             </table>
           </div>
            </div>
-           <?php } if($dara=="Estudiante"){?>
+           <?php } 
+           
+           if($dara=="Mostrar Estudiante"){?>
             <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -152,7 +156,33 @@ $result = mysqli_query($connect, $query);
           </div>
            </div>
             <?php }?>
+          
+          <?php if($dara=="Mostrar Usuario"){?>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Usuario</th>
+                  <th>Contraseña</th>
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody>               
+        <?php 
+      $i = 1;
+      foreach( $users as $ews): 
+      ?>
+      <tr>
+        <td><?= $i++;?></td>
+        <td><?= $ews[0] ?></td>
+        <td><?= $ews[1]?></td>
+        <td><?= $ews[2]?></td>
+      </tr>
+<?php endforeach ?>
+   </tbody>
 </div>  
+<?php } ?>
        </div>   
      </div>   
      <?php desconectar(); ?>

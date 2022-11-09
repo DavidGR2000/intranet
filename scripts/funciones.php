@@ -179,6 +179,15 @@
         mysqli_query($conexion,"INSERT INTO usuarios(usuario,clave,admin) VALUES('$user','$clave','$number')");
     }
 
+    function getUserss(){
+	global $conexion;
+	$dara = "admin";
+	$respuesta=mysqli_query($conexion,"SELECT usuarios.usuario, usuarios.clave,estudiante.nombre FROM usuarios RIGHT JOIN estudiante ON usuarios.usuario=estudiante.user");
+	$array_respuesta=array();
+	while ($fila = $respuesta->fetch_row())
+	  $array_respuesta[] = $fila;
+	return $array_respuesta;
+    }
 
 ?>
 
