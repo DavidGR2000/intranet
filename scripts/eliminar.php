@@ -4,7 +4,7 @@
   if(! haIniciadoSesion() || ! esAdmin() )
   {
     header('Location: ../index.html');
-  }
+  }else{
   conectar();
 
   $referencia = $_GET["id"];
@@ -12,4 +12,6 @@
   eliminard($referencia);
   eliminarC($data[0]);
   eliminarE($data[1]);
+  header('Location: ../admin/graficas.php');
 
+  }
