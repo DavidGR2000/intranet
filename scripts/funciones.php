@@ -184,9 +184,20 @@
 	$dara = "admin";
 	$respuesta=mysqli_query($conexion,"SELECT usuarios.usuario, usuarios.clave,estudiante.nombre FROM usuarios RIGHT JOIN estudiante ON usuarios.usuario=estudiante.user");
 	$array_respuesta=array();
-	while ($fila = $respuesta->fetch_row())
+    while ($fila = $respuesta->fetch_row())
 	  $array_respuesta[] = $fila;
 	return $array_respuesta;
+    }
+    function getCausa($id){
+            global $conexion;
+            $respuesta=mysqli_query($conexion,"SELECT estudiante.nombre,estudiante.user,carrera.nombre,causas.nombre,causas.motivo FROM carrera
+            INNER JOIN estudiante on carrera.id_carrera=estudiante.id_carrera
+            INNER JOIN desertores on estudiante.id_estudiante=desertores.id_estudiante
+            INNER JOIN causas on desertores.id_causa=causas.id_causa HAVING causas.nombre = '$id'");
+            $array = array();
+            while($fila=$respuesta->fetch_row())
+                $array[]=$fila;
+            return $array;
     }
 
 ?>

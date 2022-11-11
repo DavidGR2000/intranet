@@ -11,7 +11,6 @@
  $usuarios = dataTable();
  $estudiante = getEstudiante();
  $users=getUserss();
-
 ?>
 
 <?php
@@ -68,6 +67,11 @@ $result = mysqli_query($connect, $query);
                 <option>Eliminar Registro Estudiante</option>
                 <option >Mostrar Estudiante</option>
                 <option> Mostrar Usuario</option>
+                <option> Academico</option>
+                <option> Personal</option>
+                <option> Economico</option>
+                <option> Institucional</option>
+
           </select>
           <button class="btn"type="submit">enviar</button>
         </form>
@@ -168,10 +172,10 @@ $result = mysqli_query($connect, $query);
                   <th>Nombre</th>
                 </tr>
               </thead>
-              <tbody>               
-        <?php 
+              <tbody>
+        <?php
       $i = 1;
-      foreach( $users as $ews): 
+      foreach( $users as $ews):
       ?>
       <tr>
         <td><?= $i++;?></td>
@@ -181,6 +185,39 @@ $result = mysqli_query($connect, $query);
       </tr>
 <?php endforeach ?>
    </tbody>
+</div>
+<?php } ?>
+
+        <?php if($dara=="Academica" || $dara=="Personal" || $dara=="Economica" || $dara== "Institucional"){?>
+            <div class="table-responsive">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Usuario</th>
+                    <th>Carrera</th>
+                    <th>Usuario</th>
+                    <th>Causa</th>
+                    <th>Motivo</th>
+                </tr>
+            </thead>
+            <tbody>
+<?php
+    $getC= getCausa($dara);
+        $i = 1;
+               foreach( $getC as $a):
+               ?>
+               <tr>
+               <td><?= $i++;?></td>
+                 <td><?= $a[0] ?></td><td><?= $a[1]?></td>
+                                   <td><?= $a[2]?></td>
+                                                     <td><?=$a[3]?></td>
+                                                  <td><?=$a[4]?></td>
+
+
+                                               </tr>
+               <?php endforeach ?>
+</tbody>
 </div>  
 <?php } ?>
        </div>   

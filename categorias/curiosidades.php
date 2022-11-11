@@ -92,10 +92,10 @@
           <div class="form-group">
                   <label for="cusa">Causa</label>
                 <select class="form-control color" id="cusa" name="cusa" required>
-                <option>Economica</option>
-                <option>Academica</option>
+                <option>Economico</option>
+                <option>Academico</option>
                 <option>Personal</option>
-                <option >Cambio de residencia</option>
+                <option >Institucional</option>
                   </select>
                   </div>
                   <div class="form-group">
