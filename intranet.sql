@@ -353,3 +353,15 @@ INSERT INTO causas(id_causa,nombre,motivo)VALUES(id_causa, nombre_causa, motivo)
 INSERT INTO desertores(id_causa,id_estudiante,fecha)VALUES(id_causa,id_estudiante,fecha);
 END $$
 DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `registroL`(
+  usuario varchar(45),
+  clave varchar(45),
+  admin tinyint(1) 
+)
+BEGIN
+INSERT INTO usuarios(usuario,clave,admin)VALUES(usuario,clave,admin);
+END$$
+DELIMITER ;
+

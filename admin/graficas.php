@@ -10,7 +10,7 @@
  conectar();
  $usuarios = dataTable();
  $estudiante = getEstudiante();
-
+ $users=getUserss();
 ?>
 
 <?php
@@ -61,22 +61,28 @@ $result = mysqli_query($connect, $query);
           <div class="cont-grafic">  
                <div id="piechart" class="grafic"></div>  
           </div> 
-          <div class="formulario">
-          <form action="./graficas.php" method="post">
+          <div class="formul">
+          <form action="./graficas.php" method="post" class="formulario">
           <select class="form-control color" id="cusa" name="cusa" required>
-                <option>Todo</option>
-                <option >Estudiante</option>
+                <option>Eliminar Registro Estudiante</option>
+                <option >Mostrar Estudiante</option>
+                <option> Mostrar Usuario</option>
+                <option> Academico</option>
+                <option> Personal</option>
+                <option> Economico</option>
+                <option> Institucional</option>
+
           </select>
-          <button type="submit">enviar</button>
+          <button class="btn"type="submit">enviar</button>
         </form>
         </div>
-<hr>
+        <br>
 <hr>
           <div class="container-table">
           <?php
                  $dara = $_POST["cusa"];
 
-                 if($dara=="Todo"){?>
+                 if($dara=="Eliminar Registro Estudiante"){?>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -113,7 +119,9 @@ $result = mysqli_query($connect, $query);
             </table>
           </div>
            </div>
-           <?php } if($dara=="Estudiante"){?>
+           <?php } 
+           
+           if($dara=="Mostrar Estudiante"){?>
             <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -152,7 +160,66 @@ $result = mysqli_query($connect, $query);
           </div>
            </div>
             <?php }?>
+          
+          <?php if($dara=="Mostrar Usuario"){?>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Usuario</th>
+                  <th>Contraseña</th>
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody>
+        <?php
+      $i = 1;
+      foreach( $users as $ews):
+      ?>
+      <tr>
+        <td><?= $i++;?></td>
+        <td><?= $ews[0] ?></td>
+        <td><?= $ews[1]?></td>
+        <td><?= $ews[2]?></td>
+      </tr>
+<?php endforeach ?>
+   </tbody>
+</div>
+<?php } ?>
+
+        <?php if($dara=="Academica" || $dara=="Personal" || $dara=="Economica" || $dara== "Institucional"){?>
+            <div class="table-responsive">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Usuario</th>
+                    <th>Carrera</th>
+                    <th>Usuario</th>
+                    <th>Causa</th>
+                    <th>Motivo</th>
+                </tr>
+            </thead>
+            <tbody>
+<?php
+    $getC= getCausa($dara);
+        $i = 1;
+               foreach( $getC as $a):
+               ?>
+               <tr>
+               <td><?= $i++;?></td>
+                 <td><?= $a[0] ?></td><td><?= $a[1]?></td>
+                                   <td><?= $a[2]?></td>
+                                                     <td><?=$a[3]?></td>
+                                                  <td><?=$a[4]?></td>
+
+
+                                               </tr>
+               <?php endforeach ?>
+</tbody>
 </div>  
+<?php } ?>
        </div>   
      </div>   
      <?php desconectar(); ?>
