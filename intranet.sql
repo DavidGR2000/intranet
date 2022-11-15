@@ -344,11 +344,11 @@ CREATE PROCEDURE `insertRegis`(
   id_causa varchar(10),
   nombre_causa char(40),
   motivo text,
-  fecha date,
-  user varchar(45)
+  fecha date
+  
     
 )BEGIN
-INSERT INTO estudiante( id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion,user)VALUES(id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion,user);
+INSERT INTO estudiante( id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion)VALUES(id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio,direccion);
 INSERT INTO causas(id_causa,nombre,motivo)VALUES(id_causa, nombre_causa, motivo);
 INSERT INTO desertores(id_causa,id_estudiante,fecha)VALUES(id_causa,id_estudiante,fecha);
 END $$
