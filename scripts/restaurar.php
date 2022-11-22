@@ -1,7 +1,7 @@
 <?php 
 include "./generar.php";
 
-$restorePoint=DB::limpiarCadena($_POST['restorePoint']);
+$restorePoint=SGBD::limpiarCadena($_POST['restorePoint']);
 $sql=explode(";",file_get_contents($restorePoint));
 $totalErrors=0;
 set_time_limit (60);

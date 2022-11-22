@@ -40,7 +40,7 @@
 
       <div class="starter-template">
         <h1>Banco de Trabajo</h1>
-        <p class="lead">Biemvenido.<br> Este espacio esta pensado para tener acceso a las ofertas laborales para los estudiantes.</p>
+        <p class="lead">Bienvenido.<br> Este espacio esta pensado para tener acceso a las ofertas laborales para los estudiantes.</p>
       </div>
 
     </div><!-- /.container -->

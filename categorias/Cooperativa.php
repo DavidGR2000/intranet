@@ -42,7 +42,7 @@
       <div class="starter-template">
         <h1>Acerca De Uniminuto</h1>
         <p class="lead">Bienvenido.<br>
-          Esta seccion esta pensada para agregar actividades referentes al area de bienestar institucional.</p>
+          Esta seccion esta pensada para apoyar financieramente a cada estudiante de la universidad.</p>
       </div>
       <div class="container1">
       </div>
