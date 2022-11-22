@@ -1,3 +1,11 @@
+<?php
+require '../scripts/funciones.php';
+  if(! haIniciadoSesion() || !esAdmin())
+  {
+  	header('Location: ../index.html');
+  }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +17,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
           <link href="../css/dashboard.css" rel="stylesheet">
           <link rel="stylesheet" href="../css/graficas.css">
+          <link rel="stylesheet" href="../css/backup.css">
 </head>
 <body> 
       <?php include 'menu-superior.php'; ?>
@@ -17,7 +26,6 @@
         <?php include 'menu-lateral.php'; ?>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header text-center" > BACKUP</h1>
-      <a href="../scripts/backup.php">data</a>
       <form action="../scripts/restaurar.php" method="POST">
             <label for="selector">Seleccione el punto de restauracion</label>
             <select name="selector">
@@ -50,8 +58,7 @@
                   Restaurar
             </button>
       </form>
-
-   
+      <a href="../scripts/backup.php" class="boton">Generar</a>
                   </div>
                   </div>
 </body>
