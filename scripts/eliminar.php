@@ -10,8 +10,5 @@
   $referencia = $_GET["id"];
   $data = getDesertores($referencia);
   eliminard($referencia);
-  eliminarC($data[0]);
-  eliminarE($data[1]);
   header('Location: ../admin/graficas.php');
-
   }

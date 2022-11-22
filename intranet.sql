@@ -365,3 +365,46 @@ INSERT INTO usuarios(usuario,clave,admin)VALUES(usuario,clave,admin);
 END$$
 DELIMITER ;
 
+DELIMITER $$ -- CAMBIO DE DELIMITADOR POR "$$"
+DROP PROCEDURE IF EXISTS `consultas` $$
+CREATE PROCEDURE `consultas`()
+BEGIN
+ DECLARE estudiante char;
+ DECLARE usuario char;
+ DECLARE registro char;
+
+  SET registro = (SELECT desertores.id_desertores,estudiante.nombre,carrera.nombre,carrera.semestre,carrera.modalidad,desertores.fecha,causas.nombre,causas.motivo FROM carrera INNER JOIN estudiante ON carrera.id_carrera=estudiante.id_carrera INNER JOIN desertores ON estudiante.id_estudiante=desertores.id_estudiante INNER JOIN causas ON desertores.id_causa=causas.id_causa);
+  SET estudiante=(SELECT * FROM estudiante);
+  SET usuario=(SELECT usuarios.usuario, usuarios.clave,estudiante.nombre FROM usuarios RIGHT JOIN estudiante ON 
+   usuarios.usuario=estudiante.user);
+
+   SELECT estudiante as est, usuario as user, registro as reg;
+   
+END $$
+
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER `eliminar` AFTER DELETE ON `desertores`
+ FOR EACH ROW BEGIN
+DELETE FROM estudiante WHERE estudiante.id_estudiante=OLD.id_estudiante;
+DELETE FROM causas WHERE causas.id_causa=OLD.id_causa;
+END //
+
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER elimDeser_Ad AFTER DELETE ON desertores FOR EACH ROW INSERT INTO 
+desertores_elim(id_desertores,id_causa,id_estudiante,fecha_eliminacion)
+VALUES(OLD.id_desertores,OLD.id_causa,OLD.id_estudiante,NOW());
+
+DELIMITER :
+
+DELIMITER //
+CREATE TRIGGER elimEst_Ad AFTER DELETE ON estudiante FOR EACH ROW INSERT INTO elimestudiante_ad(id_estudiante,id_carrera,nombre,correo,telefono,departamento,municipio, direccion,user,fecha_elimi)
+VALUES(OLD.id_estudiante,OLD.id_carrera,OlD.nombre,OLD.correo,OLD.telefono,
+OLD.departamento,OLD.municipio,OLD.direccion,OLD.user,NOW());
+
+DELIMITER ;

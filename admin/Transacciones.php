@@ -8,7 +8,7 @@
     <body>
         <?php
         
-            require 'ingresa.php';
+            require '../scripts/funciones.php';
 
             echo '<form method="post" action="index.php">';
             echo '<input type="submit" name="commit" value="commit">';
@@ -17,10 +17,9 @@
             echo '<form method="post" action="index.php">';
             echo '<input type="submit" name="rollback" value="rollback">';
             echo '</form>';
-     
-            //Conecto aquí porque la conexión se va a dar sí o sí, solo hay dos botones, no necesitamos consultar a $_POST.
-            //$con = conecta();
-            conectar();
+    
+         global $con;
+         $con=conectar();
 
 
             

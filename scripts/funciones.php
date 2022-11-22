@@ -1,5 +1,8 @@
 <?php 
 	$conexion = null;
+	$estu=null;
+	$user = null;
+	$register=null;
 
 	function conectar()
 	{
@@ -31,7 +34,7 @@
 	function getCategoriasPorUser()
 	{
 		global $conexion;
-		$respuesta = mysqli_query($conexion, "SELECT C.categoria, C.descripcion, C.ruta FROM permisos P INNER JOIN categorias C ON P.ID_Categoria = C.ID_Categoria WHERE usuario =  '".$_SESSION['usuario']."'");		
+		$respuesta = mysqli_query($conexion, "SELECT C.categoria, C.descripcion, C.ruta FROM permisos P INNER JOIN 				categorias C ON P.ID_Categoria = C.ID_Categoria WHERE usuario =  '".$_SESSION['usuario']."'");		
 		// return $respuesta->fetch_all();
 		$respuestas_array = array();
 		while ($fila = $respuesta->fetch_row())
@@ -125,7 +128,11 @@
 
 	function dataTable(){
 		global $conexion;
-		$respuesta = mysqli_query($conexion,"SELECT desertores.id_desertores,estudiante.nombre,carrera.nombre,carrera.semestre,carrera.modalidad,desertores.fecha,causas.nombre,causas.motivo FROM carrera INNER JOIN estudiante ON carrera.id_carrera=estudiante.id_carrera INNER JOIN desertores ON estudiante.id_estudiante=desertores.id_estudiante INNER JOIN causas ON desertores.id_causa=causas.id_causa");
+		$respuesta = mysqli_query($conexion,"SELECT desertores.id_desertores,estudiante.nombre,
+		carrera.nombre,carrera.semestre,carrera.modalidad,desertores.fecha,causas.nombre,
+		causas.motivo FROM carrera INNER JOIN estudiante ON carrera.id_carrera=estudiante.id_carrera 
+		INNER JOIN desertores ON estudiante.id_estudiante=desertores.id_estudiante 
+		INNER JOIN causas ON desertores.id_causa=causas.id_causa");
 		$respuestas_array = array();
 		while ($fila = $respuesta->fetch_row())
 		  $respuestas_array[] = $fila;
@@ -146,16 +153,6 @@
 		$respuesta= mysqli_query($conexion, "SELECT id_causa, id_estudiante FROM desertores WHERE id_desertores=$id");
 		$fila= mysqli_fetch_row($respuesta);
 		return $fila;
-	}
-
-	function eliminarE($estud){
-		global $conexion;
-		mysqli_query($conexion, "DELETE FROM estudiante WHERE id_estudiante='$estud'");	
-	}
-
-	function eliminarC($causa){
-		global $conexion;
-		mysqli_query($conexion, "DELETE FROM causas WHERE id_causa='$causa'");
 	}
 	function eliminard($causa){
 		global $conexion;
@@ -181,8 +178,7 @@
 
     function getUserss(){
 	global $conexion;
-	$dara = "admin";
-	$respuesta=mysqli_query($conexion,"SELECT usuarios.usuario, usuarios.clave,estudiante.nombre FROM usuarios RIGHT JOIN estudiante ON usuarios.usuario=estudiante.user");
+	$respuesta=mysqli_query($conexion,"SELECT usuarios.usuario, usuarios.clave,estudiante.nombre FROM usuarios RIGHT JOIN 		estudiante ON usuarios.usuario=estudiante.user");
 	$array_respuesta=array();
     while ($fila = $respuesta->fetch_row())
 	  $array_respuesta[] = $fila;
@@ -190,7 +186,8 @@
     }
     function getCausa($id){
             global $conexion;
-            $respuesta=mysqli_query($conexion,"SELECT estudiante.nombre,estudiante.user,carrera.nombre,causas.nombre,causas.motivo FROM carrera
+            $respuesta=mysqli_query($conexion,"SELECT 
+		estudiante.nombre,estudiante.user,carrera.nombre,causas.nombre,causas.motivo FROM carrera
             INNER JOIN estudiante on carrera.id_carrera=estudiante.id_carrera
             INNER JOIN desertores on estudiante.id_estudiante=desertores.id_estudiante
             INNER JOIN causas on desertores.id_causa=causas.id_causa HAVING causas.nombre = '$id'");
@@ -199,6 +196,6 @@
                 $array[]=$fila;
             return $array;
     }
-
+    
 ?>
 

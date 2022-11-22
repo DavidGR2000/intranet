@@ -118,6 +118,7 @@ $result = mysqli_query($connect, $query);
               </tbody>
             </table>
           </div>
+
            </div>
            <?php } 
            
@@ -188,7 +189,7 @@ $result = mysqli_query($connect, $query);
 </div>
 <?php } ?>
 
-        <?php if($dara=="Academica" || $dara=="Personal" || $dara=="Economica" || $dara== "Institucional"){?>
+        <?php if($dara=="Academico" || $dara=="Personal" || $dara=="Economico" || $dara== "Institucional"){?>
             <div class="table-responsive">
             <table class="table table-striped">
             <thead>
@@ -223,6 +224,7 @@ $result = mysqli_query($connect, $query);
        </div>   
      </div>   
      <?php desconectar(); ?>
+
    </div>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
