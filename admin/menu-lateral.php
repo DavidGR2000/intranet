@@ -4,9 +4,6 @@
             <li><a href="permisos.php">Permisos</a></li>
             <li><a href="categorias.php">Categorías</a></li>
             <li><a href="./graficas.php">Reportes</a></li>
+            <li><a href="./Bacap.php">Backup</a></li>
           </ul>
-<!--           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-          </ul> -->
         </div>
