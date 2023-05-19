@@ -48,8 +48,9 @@ body {
 
 .pie-pagina {
   width: 100%;
-  background-color: rgb(2, 3, 129);
+  background-color: #162644;
 }
+
 
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -239,7 +240,7 @@ a {
   border: 2px solid  #ffdd5a;
   padding: 10px 25px;
   border-radius: 8px;
-  background-color: rgb(2, 3, 129);
+  background-color: #162644;
   text-align: center;
 }
 
