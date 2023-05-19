@@ -1,24 +1,105 @@
-
-*{
+::before,::after{
       box-sizing: border-box;
-}
+  }
+  
+  body{
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(238,238,238);
+  }
+  
+  
+  .container-menu{
+      display: flex;
+      bottom: 580px;
+      min-width:1024px;
+      width: 100%;
+      height: 70px;
+      background-color:#162644;
+      opacity: .6;
+      position:fixed;
+      border-bottom:1px solid white;
+  }
+  
+  .container-img{
+      max-width: 77px;
+      width: 100%;
+      margin-left: 20px;
+      padding: 0px 0px 10px;
+  }
+  .container-img, img{
+      width: 100%;
+  }
+  
+  .menu{
+     width: 100%;
+     padding: 10px 15px;
+  }
+     
+  .menu > ul{
+      display: flex;
+      gap: 35px;
+      justify-content: end;
+      align-items: end;
+      list-style: none;
+  }
+  
+  .menu, ul, li, a{
+      text-decoration: none;
+      font-size: 16px;
+      color: aliceblue;
+      font-family:'Times New Roman', Times, serif
+  }
+  li > a:hover{
+      color: rgb(244, 220, 188);
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide {
+      flex: 0 0 100%;
+    }
+    
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 100%;
+      font-weight: bold;
+      padding: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+    
+    .prev {
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+    }
+  
+  
 
-*,*{
-      box-sizing: inherit;
-}
-body{
-      padding:0;
-      margin-top: 0;
-}
-img{
-width: 100%;
-max-height: 600px;
-}
-nav{
-      height: 50px;
-      padding: 5px 0 5px 0;
-      
-}
+
+
 
 .text{
        font-family: 'Edu VIC WA NT Beginner', cursive;

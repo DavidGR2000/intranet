@@ -9,51 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
     
   </head>
 
   <body>
+    <header class="carousel-container">
+      <div class="carousel">
+          <div class="slide">
+            <img src="public/p1bzehqt.png" alt="Imagen 1">
+          </div>
+          <div class="slide">
+            <img src="public/070i4vde.png" alt="Imagen 2">
+          </div>
+          <div class="slide">
+            <img src="public/j6ltz6i8.png" alt="Imagen 3">
+          </div>
+        </div>
   
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <button class="botonR" onclick="location.href='indexRegistro.html'">Registrar</button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right formt" action="scripts/iniciar-sesion.php" method="POST">
-            <div class="form-group">
-              <input type="text" require="" autocomplete="off" placeholder="Usuario" class="form-control" name="txtUsuario">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Contraseña" class="form-control" name="txtClave">
-            </div>
-            <button type="submit" class="btn btn-success text " >Iniciar sesión</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    
-    <div class="jumbotron">
-      <div class="container-img">
-        <img src="img/Defensa de tesis.png" class="imgf" alt="estudiantil">
-      </div>
-      <div class="container contai">
-        <h1 class="text">Bienvenidos a Bienestar</h1>
-        <p>Este espacio es para el personal encargado de ayudar a nuestros jovenes a evitar la desercion. </p>
-        <a  class="bth" href="#4">Ver Mas</a>
-      </div>
-    </div>
-
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  
+        <nav class="container-menu">
+          <figure class="container-img">
+              <img src="public/OIP-removebg-preview.png" alt="logo">
+          </figure>
+          <div class="menu">
+              <ul>
+                  <li><a href="#home" class="menu1">Home</a></li>
+                  <li><a href="#about" class="menu2">About Me</a></li>
+                  <li><a href="#form" class="menu3>Form</a></li>
+                  <li><a href="#register" class="menu4">Register</a></li>
+                  <li><a href="#contac" class="menu">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  
+    </header>
     <div class="text2" id="4">
         <p> UNIMINUTO, ha sido testigo del inicio de la etapa que emprenden muchas personas en sus vidas, la cual, 
           es sinónimo de la construcción de un proyecto de vida, donde se forjan metas y sueños; sin embargo, también 
@@ -145,8 +138,8 @@
       </footer>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./js/js.js"></script>
+    <script src="./js/js copy.js"></script>
   </body>
 </html>
 
