@@ -38,4 +38,3 @@ if($statement->error){
 procAlmaIsert();
 ?>
 
-

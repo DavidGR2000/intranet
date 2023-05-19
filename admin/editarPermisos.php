@@ -51,6 +51,7 @@
                     <label for="txtUsuario">Usuario</label>
                     <input type="text" class="form-control" name="txtUsuario" id="txtUsuario" value="<?= $usuario ?>" readonly>
                   </div>
+                  
         <?php foreach( $categorias as $categoria ): ?>
                   <div class="checkbox">
                     <label>

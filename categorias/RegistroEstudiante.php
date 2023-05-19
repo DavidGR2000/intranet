@@ -17,28 +17,23 @@
   </head>
 
   <body>
+  
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="cn-nv">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Estudiante</a></li>
-          <li class="active"><a  href="../panelUsuario.php">Principal</a></li>
-            <li ><a href="#">Registro de Estudiantes</a></li>
-            <li><a href="#contact"></a></li>
+        
+        <div class="navbarr">
+          <ul class="navbarrr">
+          <li class="active"><a  href="../panelUsuario.php">Regresar</a></li>
+          <img src="../logo.png" alt="logo" />
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
+    
     <div class="contai">
       <div class="cotainer-form">
       <form action="../scripts/insertar.php"  class="form"method="POST">
@@ -54,13 +49,13 @@
                   <div class="form-group">
                     <label for="carrera">Id Carrera</label>
                   <select class="form-control color" id="carrera" name="carrera" required>
-                <option>adme1</option>
-                <option>contp1</option>
-                <option>ingag1</option>
-                <option >ingcv1</option>
-                <option >ingid1</option>
-                <option>isum1</option>
-                <option >pgi1</option>
+                <option>ADME1</option>
+                <option>CONTP1</option>
+                <option>INGAG1</option>
+                <option >INGCV1</option>
+                <option >INGID1</option>
+                <option>ISUM1</option>
+                <option >PGI1</option>
                   </select>
                 </div>
                 <div class="form-group">
@@ -103,8 +98,8 @@
                    <textarea name="motivo" id="motivo" cols="99" rows="6" class="form-control" required></textarea>
                   </div>
 
-                  <button type="submit" class="btnn btn btn-default">Guardar</button>
-                  <input type="reset" class=" btnl btn btn-default" value="borrar" >
+                  <button type="submit" class="btnn">Guardar</button>
+                  <input type="reset" class=" btnl" value="Borrar" >
           </div>
 
                 </form>
