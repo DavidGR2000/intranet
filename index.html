@@ -1,152 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Desercion estudiantilz">
-    <meta name="author" content="Camilo Casas">
-    <title>Intranet Estudiantil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-    
-  </head>
 
-  <body>
-  
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Desercion estudiantilz" />
+  <meta name="author" content="Camilo Casas" />
+  <title>Intranet Estudiantil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <script src="https://kit.fontawesome.com/d294018a37.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button class="botonR" onclick="location.href='indexRegistro.html'">
+          Registrar
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right formt" action="scripts/iniciar-sesion.php" method="POST">
+          <div class="form-group">
+            <input type="text" require="" autocomplete="off" placeholder="Usuario" class="form-control"
+              name="txtUsuario" />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Contraseña" class="form-control" name="txtClave" />
+          </div>
+          <button type="submit" class="btn btn-success text">
+            Iniciar sesión
           </button>
-        <button class="botonR" onclick="location.href='indexRegistro.html'">Registrar</button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right formt" action="scripts/iniciar-sesion.php" method="POST">
-            <div class="form-group">
-              <input type="text" require="" autocomplete="off" placeholder="Usuario" class="form-control" name="txtUsuario">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Contraseña" class="form-control" name="txtClave">
-            </div>
-            <button type="submit" class="btn btn-success text " >Iniciar sesión</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    
-    <div class="jumbotron">
-      <div class="container-img">
-        <img src="img/Defensa de tesis.png" class="imgf" alt="estudiantil">
-      </div>
-      <div class="container contai">
-        <h1 class="text">Bienvenidos a Bienestar</h1>
-        <p>Este espacio es para el personal encargado de ayudar a nuestros jovenes a evitar la desercion. </p>
-        <a  class="bth" href="#4">Ver Mas</a>
+        </form>
       </div>
     </div>
+  </nav>
 
-    <div class="text2" id="4">
-        <p> UNIMINUTO, ha sido testigo del inicio de la etapa que emprenden muchas personas en sus vidas, la cual, 
-          es sinónimo de la construcción de un proyecto de vida, donde se forjan metas y sueños; sin embargo, también 
-          es testigo del alto en el camino, de ese paso al costado que muchos estudiantes hacen por diferentes razones. </p>
-          
-          <p> por esto, que se realiza el estudio de causas de Ausentismo y Deserción buscando consolidar la información de
-           manera fidedigna, además, de generar mejoras como Institución de Educación Superior y de esta manera mantener viva 
-           nuestra misionalidad.</p>
-            <p>
-            Por esta razón, en el mes de mayo del 2021 desde el componente de Acompañamiento y Permanencia, del área de Bienestar
-            Institucional en articulación con los docentes consejeros, se emprende esta actividad. Este trabajo inicia, con el
-            reporte enviado desde la Coordinación de Sistemas de Información y Calidad, de la VGBI - Vicerrectoría General de 
-            Bienestar Institucional. Una vez, se recepciona este insumo, se realiza la depuración por programa y se procede a 
-            establecer contacto con cada estudiante.
-            </p>
-            <p>
-            Estas llamadas tienen dos objetivos fundamentales, en primer lugar, conocer causas de Ausentismo y Deserción, para
-            ello se cuenta con unos criterios predeterminados que engloban aspectos Socioeconómicos, Personales, Académicos y
-            Personales; el resultado de este estudio contribuirá a establecer planes de mejora desde los actores correspondientes.
-          </p>
-          
+  <div class="jumbotron">
+    <div class="container-img">
+      <img src="img/Defensa de tesis.png" class="imgf" alt="estudiantil" />
     </div>
-    <div class="container1">
-            <article class="card">
-              <div class="card__he">
-                <img src="https://juanxxiiizaidin.com/wp-content/uploads/2020/03/COMUNICADO1.png" alt="seguiminto academico">
-              </div>
-              <div class="card__body">
-                <h3>Seguimiento Academico</h3>
-                <hr class="line">
-                <div class="texto">
-                    <p>Estaremos pendientes de tu nivel academico durante la carrera</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card__he">
-                <a href="https://coopminutodedios.com/" target="_blank"> <img src="https://www.uniminutoradio.com.co/wp-content/uploads/2020/01/coop-minuto-768x306.jpg"> </a>
-              </div>
-              <div class="card__body">
-                <h3>Cooperativa uniminuto</h3>
-                <hr class="line">
-                <div class="texto">
-                    <p>Te damos un apoyo para que puedas cumplir tus sueños</p>
-                </div>
-              </div>
-            </article>
-            <article class="card">
-              <div class="card_he">
-                <a href="https://www.uniminuto.edu/noticias/de-bienestar-institucional-bienestar-asuntos-estudiantiles" target="_blank"> <img src="http://www.uniminutoradio.com.co/wp-content/uploads/2018/09/bienestar.jpg" alt="seguiminto academico"> </a>
-              </div>
-              <div class="card__body">
-                <h3>Bienestar institucional</h3>
-                <hr class="line">
-                <div class="texto">
-                    <p>Ofrecemos nuestros servicios para que vivas una gran experiencia dentro de la universidad</p>
-                </div>
-              </div>
-            </article>
+    <div class="container contai">
+      <h1 class="text">Bienvenidos a Bienestar</h1>
+      <p>
+        Este espacio es para el personal encargado de ayudar a nuestros
+        jovenes a evitar la desercion.
+      </p>
+      <a class="bth" href="#4">Ver Mas</a>
     </div>
-    <section  class="section">
-      <div class="container-section">
-        <h2 class="title">
-              Contacto    
-        </h2>
-        <div class="seccion__contenido">
-              <form id="form22" class="form1">
-                    <div class="form-group1">
-                          <label for="name">Nombre</label>
-                          <input type="text" id="name" class="form-control1" placeholder="Ingresa tu nombre" required>
-                    </div>
-                    <div class="form-group1">
-                          <label for="email">Correo</label>
-                          <input type="email" id="email" class="form-control1" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="form-group1">
-                          <label for="message">Mensaje</label>
-                          <textarea id="message" class="form-control1" placeholder="Platicame tu idea genial" rows="10"></textarea>
-                    </div>
-                    <input type="submit" class="btn-form" value="Enviar" />
-              </form>
-        </div>
   </div>
-    </section>
 
-      <footer>
-        <p class="text1">&copy; Bienestar <span>😍😍🤗🤗🤣💕</span></p>
-      </footer>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="./js/js.js"></script>
-  </body>
+  <div class="text2" id="4">
+    <p>
+      UNIMINUTO, ha sido testigo del inicio de la etapa que emprenden muchas
+      personas en sus vidas, la cual, es sinónimo de la construcción de un
+      proyecto de vida, donde se forjan metas y sueños; sin embargo, también
+      es testigo del alto en el camino, de ese paso al costado que muchos
+      estudiantes hacen por diferentes razones.
+    </p>
+
+    <p>
+      por esto, que se realiza el estudio de causas de Ausentismo y Deserción
+      buscando consolidar la información de manera fidedigna, además, de
+      generar mejoras como Institución de Educación Superior y de esta manera
+      mantener viva nuestra misionalidad.
+    </p>
+    <p>
+      Por esta razón, en el mes de mayo del 2021 desde el componente de
+      Acompañamiento y Permanencia, del área de Bienestar Institucional en
+      articulación con los docentes consejeros, se emprende esta actividad.
+      Este trabajo inicia, con el reporte enviado desde la Coordinación de
+      Sistemas de Información y Calidad, de la VGBI - Vicerrectoría General de
+      Bienestar Institucional. Una vez, se recepciona este insumo, se realiza
+      la depuración por programa y se procede a establecer contacto con cada
+      estudiante.
+    </p>
+    <p>
+      Estas llamadas tienen dos objetivos fundamentales, en primer lugar,
+      conocer causas de Ausentismo y Deserción, para ello se cuenta con unos
+      criterios predeterminados que engloban aspectos Socioeconómicos,
+      Personales, Académicos y Personales; el resultado de este estudio
+      contribuirá a establecer planes de mejora desde los actores
+      correspondientes.
+    </p>
+  </div>
+  <div class="container1">
+    <article class="card">
+      <div class="card__he">
+        <img src="https://juanxxiiizaidin.com/wp-content/uploads/2020/03/COMUNICADO1.png" alt="seguiminto academico" />
+      </div>
+      <div class="card__body">
+        <h3>Seguimiento Academico</h3>
+        <hr class="line" />
+        <div class="texto">
+          <p>Estaremos pendientes de tu nivel academico durante la carrera</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__he">
+        <a href="https://coopminutodedios.com/" target="_blank">
+          <img src="https://www.uniminutoradio.com.co/wp-content/uploads/2020/01/coop-minuto-768x306.jpg" />
+        </a>
+      </div>
+      <div class="card__body">
+        <h3>Cooperativa uniminuto</h3>
+        <hr class="line" />
+        <div class="texto">
+          <p>Te damos un apoyo para que puedas cumplir tus sueños</p>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card_he">
+        <a href="https://www.uniminuto.edu/noticias/de-bienestar-institucional-bienestar-asuntos-estudiantiles"
+          target="_blank">
+          <img src="http://www.uniminutoradio.com.co/wp-content/uploads/2018/09/bienestar.jpg"
+            alt="seguiminto academico" />
+        </a>
+      </div>
+      <div class="card__body">
+        <h3>Bienestar institucional</h3>
+        <hr class="line" />
+        <div class="texto">
+          <p>
+            Ofrecemos nuestros servicios para que vivas una gran experiencia
+            dentro de la universidad
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+  <section class="section">
+    <div class="container-section">
+      <h2 class="title">Contacto</h2>
+      <div class="seccion__contenido">
+        <form id="form22" class="form1">
+          <div class="form-group1">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-control1" placeholder="Ingresa tu nombre" required />
+          </div>
+          <div class="form-group1">
+            <label for="email">Correo</label>
+            <input type="email" id="email" class="form-control1" placeholder="Ingresa tu correo" required />
+          </div>
+          <div class="form-group1">
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="form-control1" placeholder="Platicame tu idea genial" rows="10"></textarea>
+          </div>
+          <input type="submit" class="btn-form" value="Enviar" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="index.html">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+          molestias qui, itaque cum soluta reiciendis excepturi voluptates
+          earum laudantium ipsam, modi consequuntur. Consequuntur numquam quod
+          quaerat molestiae natus voluptatibus commodi?
+        </p>
+      </div>
+      <div class="box">
+        <h2>Siguenos</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2023 <b></b> Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="./js/js.js"></script>
+</body>
+
 </html>
-

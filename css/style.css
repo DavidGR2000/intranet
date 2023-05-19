@@ -1,48 +1,48 @@
-
-*{
-      box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-*,*{
-      box-sizing: inherit;
-}
-body{
-      padding:0;
-      margin-top: 0;
-}
-img{
-width: 100%;
-max-height: 600px;
-}
-nav{
-      height: 50px;
-      padding: 5px 0 5px 0;
-      
+*,
+* {
+  box-sizing: inherit;
 }
 
-.text{
-       font-family: 'Edu VIC WA NT Beginner', cursive;
-      font-family: 'Source Serif Pro', serif;
-}
-.form-control{
-      padding-left: 20px;
-      height: 20px;
-}
-.jumbotron{
-      min-height: 60vh;
+body {
+  padding: 0;
+  margin-top: 0;
 }
 
-
-.container-img{
-     width: 100%;
-     overflow: hidden;
-    
+img {
+  width: 100%;
+  max-height: 600px;
 }
 
-
-.contai{
-      margin-top: 60px;
-      justify-content: center;
-      text-align: center;
+nav {
+  height: 50px;
+  padding: 5px 0 5px 0;
 }
 
+.text {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-family: "Source Serif Pro", serif;
+}
+
+.form-control {
+  padding-left: 20px;
+  height: 20px;
+}
+
+.jumbotron {
+  min-height: 60vh;
+}
+
+.container-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contai {
+  margin-top: 60px;
+  justify-content: center;
+  text-align: center;
+}

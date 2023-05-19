@@ -10,7 +10,7 @@ const form= document.getElementById("form22")
 form.addEventListener('submit', async (e) => {
   e.preventDefault()
 
-  const email = 'robertodavid840@gmail.com'
+  const email = 'ro'
   const URL_BASE = `https://formsubmit.co/${email}`
 
   const input = e.currentTarget.elements
