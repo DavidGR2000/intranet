@@ -235,6 +235,8 @@ a {
   border-radius: 8px;
   background-color: #162644;
   text-align: center;
+  position: sticky;
+  z-index: inherit;
 }
 
 .form1 input,
