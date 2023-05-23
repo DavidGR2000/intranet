@@ -4,6 +4,7 @@
   
   body{
       margin: 0px;
+      width: 100%;
       padding: 0px;
       background-color: rgb(238,238,238);
   }
@@ -63,6 +64,7 @@
     }
     
     .carousel {
+      width: 100%;
       display: flex;
       transition: transform 0.5s ease-in-out;
     }
@@ -120,4 +122,10 @@
   margin-top: 60px;
   justify-content: center;
   text-align: center;
+}
+
+@media(min-with:621px) {
+    .container-menu{
+      bottom:50%;
+    }
 }
