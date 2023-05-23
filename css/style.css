@@ -17,6 +17,7 @@
       background-color:#162644;
       opacity: .66;
       position:fixed;
+      top: 0;
       bottom: 590px;
       border-bottom:1px solid white;
       justify-content: space-between;
