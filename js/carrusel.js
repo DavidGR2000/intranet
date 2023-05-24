@@ -18,4 +18,3 @@ function showSlide(n) {
   }
 }
 setInterval(() =>{changeSlide(1)},5000)
-

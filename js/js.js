@@ -1,3 +1,4 @@
+
 function toggleregistro() {
   const registro= document.getElementById('register');
   registro.classList.toggle('hidden');
