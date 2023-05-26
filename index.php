@@ -44,9 +44,9 @@
           <div class="menu">
               <ul>
                   <li><a href="#home" class="menu1" title="Home">Home<i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
-                  <li><a href="#about" class="menu2" title="Acerca de">About me<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#nosotros" class="menu2" title="Acerca de">About me<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
                   <li><a href="#form" class="menu3" title="Formulario">Form<i class="fa-solid fa-book" style="color: #ffffff;"></i></a></li>
-                  <li><a href="#contac" class="menu1" title="Contacto">Contac<i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#contact" class="menu1" title="Contacto">Contac<i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></li>
                   <li><a class="btn-menu" onclick="openModal()" title="Login Administrador">Login<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
               </ul>
           </div>
@@ -67,7 +67,7 @@
           <button class="Btnform-soli" type="submit">Ingresar</button>
         </form>
       </div>
-      <button class="Btnform-sol" onclick="closeModal()">x</button>
+      <button class="Btnform-sol" onclick="closeModal()">X</button>
     </dialog>
   
     </header>
@@ -183,21 +183,28 @@ if($config["estado"]!=true){  ?>
             <label for="name">Nombre</label>
             <input type="text" id="name" class="form-control1" placeholder="Ingresa tu nombre" required />
           </div>
-          <div class="form-group1">
-            <label for="email">Correo</label>
-            <input type="email" id="email" class="form-control1" placeholder="Ingresa tu correo" required />
+          <div class="inputs">
+            <label for="Correo">Correo</label>
+            <input type="text" placeholder="   Digita tu correo" id="Correo" name="correo" required> 
           </div>
-          <div class="form-group1">
-            <label for="message">Mensaje</label>
-            <textarea id="message" class="form-control1" placeholder="Platicame tu idea genial" rows="10"></textarea>
+          <div class="inputs" id="mensaje">
+            <label for="Mensaje">Mensaje</label>
+            <input type="text" id="Mensaje" placeholder="   Cuentanos en que podemos ayudarte" name="mensaje" required>
           </div>
-          <input type="submit" class="btn-form" value="Enviar" />
+          <div class="terminos">
+            <input type="checkbox" id="box" required>
+            <label for="myCheckBox">Acepto Terminos y Condiciones</label>
+          </div>
+          <div class="inputs">
+            <button id="miBoton" class="Solicitud" type="submit" disabled>Enviar solicitud</button>
+          </div>
+          <input type="hidden" name="_next" value="http://localhost:5500">
+          <input type="hidden" name="_captcha" value="false">
         </form>
-      </div>
     </div>
-  </section>
+  </div>
 
-  <footer class="pie-pagina">
+  <footer class="pie-pagina" id="nosotros">
     <div class="grupo-1">
       <div class="box">
         <figure>
@@ -234,6 +241,7 @@ if($config["estado"]!=true){  ?>
   <script src="js/carrusel.js"></script>
   <script src="./js/js.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/terminos.js"></script>
 </body>
 
 </html>
