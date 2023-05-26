@@ -142,3 +142,32 @@
       bottom:50%;
     }
 }
+.contenedor-registro{
+  min-width: 1024px;
+  width: 99%;
+  overflow: hidden;
+  height: 60vh;
+  position: relative;
+}
+
+.contenedor-registro .fondo23{
+  width: 100%;
+  opacity: .66;
+}
+
+.boton{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  background-color: rgb(234, 0, 255);
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.boton:hover{
+  background-color: rgb(50, 5, 92);
+}
+.ocultar{
+  display: none;
+}

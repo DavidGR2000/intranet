@@ -2,7 +2,7 @@
 require 'funciones.php';
 if(! haIniciadoSesion() )
 {
-    header('Location: ../index.html');
+    header('Location: ../index.php');
 }
 
 $user = $_SESSION["usuario"];

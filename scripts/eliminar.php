@@ -3,7 +3,7 @@
   // Validación de la sesión como administrador:
   if(! haIniciadoSesion() || ! esAdmin() )
   {
-    header('Location: ../index.html');
+    header('Location: ../index.php');
   }else{
   conectar();
 

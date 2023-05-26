@@ -1,9 +1,4 @@
 
-function toggleregistro() {
-  const registro= document.getElementById('register');
-  registro.classList.toggle('hidden');
-}
-
 /*contacto*/
 
 const form= document.getElementById("form22")

@@ -3,7 +3,7 @@ require '../scripts/funciones.php';
 // Validación de la sesión como administrador:
 if(! haIniciadoSesion() || ! esAdmin() )
 {
-  header('Location: ../index.html');
+  header('Location: ../index.php');
 }
 conectar();
 ?>

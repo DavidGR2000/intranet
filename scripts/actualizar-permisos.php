@@ -3,7 +3,7 @@
   // Validación de la sesión como administrador:
   if(! haIniciadoSesion() || ! esAdmin() )
   {
-    header('Location: ../index.html');
+    header('Location: ../index.php');
   }
   // Verificación del parámetro POST:
   if( isset($_POST['txtUsuario']) )

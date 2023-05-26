@@ -26,7 +26,7 @@
         
         <div class="navbarr">
           <ul class="navbarrr">
-          <li class="active"><a  href="../panelUsuario.php">Regresar</a></li>
+          <li class="active"><a  href="../index.php">Regresar</a></li>
           <img src="../logo.png" alt="logo" />
           </ul>
         </div>
