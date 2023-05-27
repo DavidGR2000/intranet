@@ -415,6 +415,7 @@ a {
 .Btnform-sol:hover{
   color: red;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .logo{
@@ -485,6 +486,20 @@ a {
   cursor: pointer;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+input[type="checkbox"]:checked + label {
+  color: red;
+}
+
+input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label + #miBoton {
+  background-color: rgb(89, 89, 94);
+  color: white;
+}
+
 
 .terminos{
   height: 30px;
