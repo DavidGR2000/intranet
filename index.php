@@ -10,7 +10,6 @@
     <meta name="description" content="Desercion estudiantilz">
     <meta name="author" content="Camilo Casas">
     <title>Alerta Desercion</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet"> 
@@ -174,14 +173,15 @@ if($config["estado"]!=true){  ?>
 </section>
 <?php }?>
 
-  <section class="section">
-    <div class="container-section">
-      <h2 class="title">Contacto</h2>
-      <div class="seccion__contenido" style="position: relative;">
-        <form id="form22" class="form1">
-          <div class="form-group1">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" class="form-control1" placeholder="Ingresa tu nombre" required />
+<div class="contact-container" id="contact">
+      <div class="container-form">
+        <div class="text-form">
+          <h3>¡ Escribenos y nos pondremos en contacto contigo !</h3>
+        </div>
+        <form class="form-contact" action="https://formsubmit.co/60279c7c61478e6b1886eb1f679abf17" method="POST">
+          <div class="inputs">
+            <label for="Nombre">Nombre Completo</label>
+            <input type="text" placeholder="   Digita tu nombre" id="Nombre" name="nombre" required>
           </div>
           <div class="inputs">
             <label for="Correo">Correo</label>
@@ -202,7 +202,8 @@ if($config["estado"]!=true){  ?>
           <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
-  </div>
+  </div>  
+
 
   <footer class="pie-pagina" id="nosotros">
     <div class="grupo-1">
