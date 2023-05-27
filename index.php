@@ -1,3 +1,7 @@
+<?php
+ require "./scripts/config.php";
+?>
+ 
 <!DOCTYPE html>
 <html lang="es">
   <head>  
@@ -5,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Desercion estudiantilz">
     <meta name="author" content="Camilo Casas">
-    <title>Intranet Estudiantil</title>
+    <title>Alerta Desercion</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;600;700&family=Source+Serif+Pro:ital,wght@0,600;0,700;1,300&display=swap" rel="stylesheet"> 
@@ -66,7 +71,6 @@
     </dialog>
   
     </header>
-
     <div class="container contai">
       <h1 class="text">Bienvenidos a Bienestar</h1>
       <p>
@@ -168,6 +172,25 @@
           <div class="inputs">
             <label for="Nombre">Nombre Completo</label>
             <input type="text" placeholder="   Digita tu nombre" id="Nombre" name="nombre" autocomplete="off" required>
+
+<?php
+if($config["estado"]!=true){  ?>
+<section>
+ <div class="contenedor-registro">
+  <img src="./public/OIG.jpg" alt="fondo" class="fondo23">
+  <button class="boton"><a href="./categorias/RegistroEstudiante.php">ingresa ya</a></button>
+ </div>
+</section>
+<?php }?>
+
+  <section class="section">
+    <div class="container-section">
+      <h2 class="title">Contacto</h2>
+      <div class="seccion__contenido" style="position: relative;">
+        <form id="form22" class="form1">
+          <div class="form-group1">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-control1" placeholder="Ingresa tu nombre" required />
           </div>
           <div class="inputs">
             <label for="Correo">Correo</label>
@@ -194,7 +217,7 @@
     <div class="grupo-1">
       <div class="box">
         <figure>
-          <a href="index.html">
+          <a href="index.php">
             <img src="./img/logo.png" alt="logo" />
           </a>
         </figure>

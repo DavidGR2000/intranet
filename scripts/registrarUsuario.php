@@ -6,7 +6,7 @@ $contraseña = $_POST["Contraseña"];
 $numero = getnumber();
 conectar();
 agregarUser($user,$contraseña,$numero);
-header('Location: ../index.html');
+header('Location: ../index.php');
  desconectar();
 
 ?>

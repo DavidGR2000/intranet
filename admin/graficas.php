@@ -5,7 +5,7 @@
  
  if(! haIniciadoSesion() || ! esAdmin() )
  {
-   header('Location: ../index.html');
+   header('Location: ../index.php');
  }
  conectar();
  $usuarios = dataTable();
