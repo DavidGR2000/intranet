@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <header class="carousel-container">
+    <header class="carousel-container" id="home">
       <div class="carousel">
           <div class="slide">
             <img src="public/p1bzehqt.png" alt="Imagen 1">
@@ -43,7 +43,7 @@
           <div class="menu">
               <ul>
                   <li><a href="#home" class="menu1" title="Home">Home<i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
-                  <li><a href="#nosotros" class="menu2" title="Acerca de">About me<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#about" class="menu2" title="Acerca de">About me<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
                   <li><a href="#form" class="menu3" title="Formulario">Form<i class="fa-solid fa-book" style="color: #ffffff;"></i></a></li>
                   <li><a href="#contact" class="menu1" title="Contacto">Contac<i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></li>
                   <li><a class="btn-menu" onclick="openModal()" title="Login Administrador">Login<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
@@ -68,8 +68,8 @@
       </div>
       <button class="Btnform-sol" onclick="closeModal()">X</button>
     </dialog>
-  
     </header>
+
     <div class="container contai">
       <h1 class="text">Bienvenidos a Bienestar</h1>
       <p>
@@ -79,8 +79,7 @@
       <a class="bth" href="#4">Ver Mas</a>
     </div>
   </div>
-
-  <div class="text2" id="4">
+  <div class="text2" id="4" >
     <p>
       UNIMINUTO, ha sido testigo del inicio de la etapa que emprenden muchas
       personas en sus vidas, la cual, es sinónimo de la construcción de un
@@ -114,7 +113,7 @@
       correspondientes.
     </p>
   </div>
-  <div class="container1">
+  <div class="container1" id="about">
     <article class="card">
       <div class="card__he">
         <img src="https://juanxxiiizaidin.com/wp-content/uploads/2020/03/COMUNICADO1.png" alt="seguiminto academico" />
@@ -165,7 +164,7 @@
 
 <?php
 if($config["estado"]!=true){  ?>
-<section>
+<section id="form">
  <div class="contenedor-registro">
   <img src="./public/OIG.jpg" alt="fondo" class="fondo23">
   <button class="boton"><a href="./categorias/RegistroEstudiante.php">ingresa ya</a></button>

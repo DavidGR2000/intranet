@@ -187,7 +187,7 @@
     function getCausa($id){
             global $conexion;
             $respuesta=mysqli_query($conexion,"SELECT 
-		estudiante.nombre,estudiante.user,carrera.nombre,causas.nombre,causas.motivo FROM carrera
+		estudiante.nombre,carrera.nombre,causas.nombre,causas.motivo FROM carrera
             INNER JOIN estudiante on carrera.id_carrera=estudiante.id_carrera
             INNER JOIN desertores on estudiante.id_estudiante=desertores.id_estudiante
             INNER JOIN causas on desertores.id_causa=causas.id_causa HAVING causas.nombre = '$id'");

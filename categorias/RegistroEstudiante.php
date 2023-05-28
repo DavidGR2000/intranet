@@ -46,6 +46,15 @@
                     <label for="nombre">Nombre Completo</label>
                     <input type="text" class="form-control" id="nombre"  name="nombre" required>
                   </div>
+
+                  <div class="form-group">
+                    <label for="genero">Genero</label>
+                  <select class="form-control color" id="genero" name="genero" required>
+                <option>Mujer</option>
+                <option>Hombre</option>
+                  </select>
+                </div>
+
                   <div class="form-group">
                     <label for="carrera">Id Carrera</label>
                   <select class="form-control color" id="carrera" name="carrera" required>
@@ -94,7 +103,7 @@
                   </select>
                   </div>
                   <div class="form-group">
-                    <label for="motivo">Motivo</label>
+                    <label for="motivo">Descripcion</label>
                    <textarea name="motivo" id="motivo" cols="99" rows="6" class="form-control" required></textarea>
                   </div>
 

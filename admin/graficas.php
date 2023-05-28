@@ -10,7 +10,6 @@
  conectar();
  $usuarios = dataTable();
  $estudiante = getEstudiante();
- $users=getUserss();
 ?>
 
 <?php
@@ -66,7 +65,6 @@ $result = mysqli_query($connect, $query);
           <select class="form-control color" id="cusa" name="cusa" required>
                 <option>Eliminar Registro Estudiante</option>
                 <option >Mostrar Estudiante</option>
-                <option> Mostrar Usuario</option>
                 <option> Academico</option>
                 <option> Personal</option>
                 <option> Economico</option>
@@ -136,6 +134,7 @@ $result = mysqli_query($connect, $query);
                   <th>Departamento</th>
                   <th>Municipio</th>
                   <th>Direccion</th>
+                  <th>Genero</th>
                 </tr>
               </thead>
               <tbody>
@@ -153,6 +152,8 @@ $result = mysqli_query($connect, $query);
                    <td><?= $studen[5]?></td>
                    <td><?= $studen[6]?></td>
                    <td><?= $studen[7]?></td>
+                   <td><?= $studen[8]?></td>
+
 
                  </tr>
          <?php endforeach ?>
@@ -162,32 +163,6 @@ $result = mysqli_query($connect, $query);
            </div>
             <?php }?>
           
-          <?php if($dara=="Mostrar Usuario"){?>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Index</th>
-                  <th>Usuario</th>
-                  <th>Contraseña</th>
-                  <th>Nombre</th>
-                </tr>
-              </thead>
-              <tbody>
-        <?php
-      $i = 1;
-      foreach( $users as $ews):
-      ?>
-      <tr>
-        <td><?= $i++;?></td>
-        <td><?= $ews[0] ?></td>
-        <td><?= $ews[1]?></td>
-        <td><?= $ews[2]?></td>
-      </tr>
-<?php endforeach ?>
-   </tbody>
-</div>
-<?php } ?>
 
         <?php if($dara=="Academico" || $dara=="Personal" || $dara=="Economico" || $dara== "Institucional"){?>
             <div class="table-responsive">
@@ -195,9 +170,8 @@ $result = mysqli_query($connect, $query);
             <thead>
                 <tr>
                     <th>Index</th>
-                    <th>Usuario</th>
+                    <th>Estudiante</th>
                     <th>Carrera</th>
-                    <th>Usuario</th>
                     <th>Causa</th>
                     <th>Motivo</th>
                 </tr>
@@ -213,7 +187,7 @@ $result = mysqli_query($connect, $query);
                  <td><?= $a[0] ?></td><td><?= $a[1]?></td>
                                    <td><?= $a[2]?></td>
                                                      <td><?=$a[3]?></td>
-                                                  <td><?=$a[4]?></td>
+    
 
 
                                                </tr>
