@@ -42,10 +42,10 @@
           </figure>
           <div class="menu">
               <ul>
-                  <li><a href="#home" class="menu1" title="Home">Inicio<i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
-                  <li><a href="#nosotros" class="menu2" title="Acerca de">Acerca De<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#home" class="menu1" title="Home">Home<i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#nosotros" class="menu2" title="Acerca de">About me<i class="fa-solid fa-address-book" style="color: #ffffff;"></i></a></li>
                   <li><a href="#form" class="menu3" title="Formulario">Form<i class="fa-solid fa-book" style="color: #ffffff;"></i></a></li>
-                  <li><a href="#contact" class="menu1" title="Contacto">Contacto<i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></li>
+                  <li><a href="#contact" class="menu1" title="Contacto">Contac<i class="fa-solid fa-phone" style="color: #ffffff;"></i></a></li>
                   <li><a class="btn-menu" onclick="openModal()" title="Login Administrador">Login<i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></li>
               </ul>
           </div>
@@ -60,8 +60,8 @@
         <p>En este apartado podras iniciar sesion como administrador<br>
         </p>
         <form action="./scripts/iniciar-sesion.php" class="form-solicitud" method="post">
-          <input type="text" id="txtUsuario" name="txtUsuario" autocomplete="off" placeholder="Usuario">
-          <input type="password" id="txtClave" name="txtClave" autocomplete="off" placeholder="Contraseña">
+          <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Usuario">
+          <input type="password" id="txtClave" name="txtClave" placeholder="Contraseña">
 
           <button class="Btnform-soli" type="submit">Ingresar</button>
         </form>
@@ -162,15 +162,6 @@
       </div>
     </article>
   </div>
-  <div class="contact-container" id="contact">
-      <div class="container-form">
-        <div class="text-form">
-          <h3>¡ Escribenos y nos pondremos en contacto contigo !</h3>
-        </div>
-        <form class="form-contact" action="https://formsubmit.co/60279c7c61478e6b1886eb1f679abf17" method="POST">
-          <div class="inputs">
-            <label for="Nombre">Nombre Completo</label>
-            <input type="text" placeholder="   Digita tu nombre" id="Nombre" name="nombre" autocomplete="off" required>
 
 <?php
 if($config["estado"]!=true){  ?>
@@ -194,11 +185,11 @@ if($config["estado"]!=true){  ?>
           </div>
           <div class="inputs">
             <label for="Correo">Correo</label>
-            <input type="text" placeholder="   Digita tu correo" id="Correo" name="correo" autocomplete="off" required> 
+            <input type="text" placeholder="   Digita tu correo" id="Correo" name="correo" required> 
           </div>
           <div class="inputs" id="mensaje">
             <label for="Mensaje">Mensaje</label>
-            <input type="text" id="Mensaje" placeholder="   Cuentanos en que podemos ayudarte" autocomplete="off" name="mensaje" required>
+            <input type="text" id="Mensaje" placeholder="   Cuentanos en que podemos ayudarte" name="mensaje" required>
           </div>
           <div class="terminos">
             <input type="checkbox" id="box" required>
