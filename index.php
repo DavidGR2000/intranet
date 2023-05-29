@@ -172,7 +172,7 @@ if($config["estado"]!=true){  ?>
 </section>
 <?php }?>
 
-<div class="contact-container" id="contact">
+<div class="contact-container" id="contact" style="margin-top: 20vh;">
       <div class="container-form">
         <div class="text-form">
           <h3>¡ Escribenos y nos pondremos en contacto contigo !</h3>
@@ -204,7 +204,7 @@ if($config["estado"]!=true){  ?>
   </div>  
 
 
-  <footer class="pie-pagina" id="nosotros">
+  <footer class="pie-pagina" id="nosotros" style="margin-top: 20vh;">
     <div class="grupo-1">
       <div class="box">
         <figure>

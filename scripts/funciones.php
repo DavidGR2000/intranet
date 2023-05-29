@@ -4,6 +4,8 @@
 	$user = null;
 	$register=null;
 
+	
+	
 	function conectar()
 	{
 		global $conexion;
@@ -129,7 +131,7 @@
 	function dataTable(){
 		global $conexion;
 		$respuesta = mysqli_query($conexion,"SELECT desertores.id_desertores,estudiante.nombre,
-		carrera.nombre,carrera.semestre,carrera.modalidad,desertores.fecha,causas.nombre,
+		carrera.carrera,carrera.semestre,carrera.modalidad,desertores.fecha,causas.causa,
 		causas.motivo FROM carrera INNER JOIN estudiante ON carrera.id_carrera=estudiante.id_carrera 
 		INNER JOIN desertores ON estudiante.id_estudiante=desertores.id_estudiante 
 		INNER JOIN causas ON desertores.id_causa=causas.id_causa");
@@ -187,10 +189,10 @@
     function getCausa($id){
             global $conexion;
             $respuesta=mysqli_query($conexion,"SELECT 
-		estudiante.nombre,carrera.nombre,causas.nombre,causas.motivo FROM carrera
+		estudiante.nombre,carrera.carrera,causas.causa,causas.motivo FROM carrera
             INNER JOIN estudiante on carrera.id_carrera=estudiante.id_carrera
             INNER JOIN desertores on estudiante.id_estudiante=desertores.id_estudiante
-            INNER JOIN causas on desertores.id_causa=causas.id_causa HAVING causas.nombre = '$id'");
+            INNER JOIN causas on desertores.id_causa=causas.id_causa HAVING causas.causa = '$id'");
             $array = array();
             while($fila=$respuesta->fetch_row())
                 $array[]=$fila;

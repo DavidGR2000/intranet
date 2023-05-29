@@ -14,7 +14,7 @@
 
 <?php
 $connect = mysqli_connect("localhost", "root", "", "intranet");  
-$query = "SELECT nombre, count(*) as number FROM causas GROUP BY nombre";  
+$query = "SELECT causa, count(*) as number FROM causas GROUP BY causa";  
 $result = mysqli_query($connect, $query);  
 ?>  
 
@@ -33,7 +33,7 @@ $result = mysqli_query($connect, $query);
                          <?php  
                          while($row = mysqli_fetch_array($result))  
                          {  
-                              echo "['".$row["nombre"]."', ".$row["number"]."],";  
+                              echo "['".$row["causa"]."', ".$row["number"]."],";  
                          }  
                          ?>  
                     ]);  

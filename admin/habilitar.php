@@ -44,7 +44,7 @@ require '../scripts/funciones.php';
                 <h4 class="card-title" style="text-align: center; font-weight:bold;">Habilita el formulario</h5>
                 <p class="card-text" style="text-align: center;">Formulario estudiantil que se hace cada semestre como una alerta temprana</p>
                 <form method="POST">
-                  <input type="submit" class="btn btn-primary" name="toggle" value="Ocultar" style="margin: 5px 150px; padding:10px 20px;">
+                  <input type="submit" class="btn btn-warning" name="toggle" value="Ocultar" style="margin: 5px 150px; padding:10px 20px;">
                 </form>
             </div>
         </div>
