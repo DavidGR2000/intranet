@@ -197,7 +197,7 @@ if($config["estado"]!=true){  ?>
           <div class="inputs">
             <button id="miBoton" class="Solicitud" type="submit" disabled>Enviar solicitud</button>
           </div>
-          <input type="hidden" name="_next" value="http://localhost:5500">
+          <input type="hidden" name="_next" value="http://localhost/estudiantil/intranet/index.php">
           <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
