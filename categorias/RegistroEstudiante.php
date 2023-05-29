@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registro de Estudiantes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style1.css">
-    <link rel="stylesheet" href="../css/gaficas.css">
+    <link rel="stylesheet" href="../css/formStudent.css">
+    <link rel="stylesheet" href="../css/graficas.css">
     <link rel="stylesheet" href="http://localhost/estudiantil/intranet/css/grupos.css">
     
     <style>
@@ -35,29 +35,28 @@
 
     
     <div class="contai">
-      <div class="cotainer-form">
       <form action="../scripts/insertar.php"  class="form"method="POST">
         <div class="cntfor">
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="estudiante">Id Estudiante</label>
-                    <input type="text" class="form-control" id="estudiante" name="estudiante" required>
+                    <input type="text" class="input" id="estudiante" name="estudiante" autocomplete="off" required>
                   </div>                
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="nombre">Nombre Completo</label>
-                    <input type="text" class="form-control" id="nombre"  name="nombre" required>
+                    <input type="text" class="input" id="nombre"  name="nombre" autocomplete="off" required>
                   </div>
 
-                  <div class="form-group">
-                    <label for="genero">Genero</label>
-                  <select class="form-control color" id="genero" name="genero" required>
-                <option>Mujer</option>
-                <option>Hombre</option>
-                  </select>
-                </div>
+                  <div class="inputs">
+                      <label for="genero">Genero</label>
+                      <select class="input" id="genero" name="genero" required>
+                        <option>Mujer</option>
+                        <option>Hombre</option>
+                      </select>
+                  </div>
 
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="carrera">Id Carrera</label>
-                  <select class="form-control color" id="carrera" name="carrera" required>
+                  <select class="input" id="carrera" name="carrera" required>
                 <option>ADME1</option>
                 <option>CONTP1</option>
                 <option>INGAG1</option>
@@ -67,52 +66,51 @@
                 <option >PGI1</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="inputs">
                     <label for="fecha">Fecha De Registro</label>
-                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    <input type="date" class="input" id="fecha" name="fecha" autocomplete="off" required>
                   </div>
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="correo">Correo Electronico</label>
-                    <input type="email" class="form-control" id="correo" name="correo" required>
+                    <input type="email" class="input" id="correo" name="correo" autocomplete="off" required>
                   </div>
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="telefono">Numero Telefonico</label>
-                    <input type="text" class="form-control" id="telefono" name="telefono" required>
+                    <input type="text" class="input" id="telefono" name="telefono" autocomplete="off" required>
                   </div>   
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="departamento">Departamento</label>
-                    <input type="text" class="form-control" id="departamento" name="departamento" required>
+                    <input type="text" class="input" id="departamento" name="departamento" autocomplete="off" required>
                   </div> 
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="municipio">Municipio</label>
-                    <input type="text" class="form-control" id="municipio" name="municipio" required>
+                    <input type="text" class="input" id="municipio" name="municipio" autocomplete="off" required>
                   </div> 
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="direccion">Direccion</label>
-                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    <input type="text" class="input" id="direccion" name="direccion" autocomplete="off" required>
                   </div>   
           </div>
-          <div class="ctnfr2">
-          <div class="form-group">
+
+          <div class="inputs">
                   <label for="cusa">Causa</label>
-                <select class="form-control color" id="cusa" name="cusa" required>
+                <select class="input" id="cusa" name="cusa" required>
                 <option>Economico</option>
                 <option>Academico</option>
                 <option>Personal</option>
                 <option >Institucional</option>
                   </select>
                   </div>
-                  <div class="form-group">
+                  <div class="inputs">
                     <label for="motivo">Descripcion</label>
-                   <textarea name="motivo" id="motivo" cols="99" rows="6" class="form-control" required></textarea>
+                   <textarea name="motivo" id="motivo" cols="99" rows="6" class="input" required></textarea>
                   </div>
-
-                  <button type="submit" class="btnn">Guardar</button>
-                  <input type="reset" class=" btnl" value="Borrar" >
-          </div>
-
-                </form>
+                <div class="cont-buttons">
+                <button type="submit" class="btnl">Guardar</button>
+                  <button type="reset" class=" btnl">Borrar</button>
+                </div>
 </div>
+                </form>
     </div><!-- /.container -->
 
 
