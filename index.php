@@ -167,7 +167,7 @@ if($config["estado"]!=true){  ?>
 <section id="form">
  <div class="contenedor-registro">
   <img src="./public/OIG.jpg" alt="fondo" class="fondo23">
-  <button class="boton"><a href="./categorias/RegistroEstudiante.php">ingresa ya</a></button>
+  <button class="boton"><a href="./categorias/RegistroEstudiante.php">Realizar formulario</a></button>
  </div>
 </section>
 <?php }?>
@@ -184,7 +184,7 @@ if($config["estado"]!=true){  ?>
           </div>
           <div class="inputs">
             <label for="Correo">Correo</label>
-            <input type="text" placeholder="   Digita tu correo" id="Correo" name="correo" required> 
+            <input type="text" placeholder="   Digita tu correo @uniminuto.edu.co" id="Correo" name="correo" pattern=".+@uniminuto\.edu.co " required>
           </div>
           <div class="inputs" id="mensaje">
             <label for="Mensaje">Mensaje</label>
@@ -225,9 +225,9 @@ if($config["estado"]!=true){  ?>
       <div class="box">
         <h2>Siguenos</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.facebook.com/UNIMINUTOCOLOMBIA/?locale=es_LA" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/uniminutocol/?hl=es" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/uniminutocol?lang=es" class="fa fa-twitter"></a>
         </div>
       </div>
     </div>
